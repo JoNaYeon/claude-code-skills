@@ -6,7 +6,7 @@ set -e
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SKILLS_DIR="$HOME/.claude/skills"
-CATEGORIES=(coding documentation productivity testing devops)
+CATEGORIES=(git coding documentation productivity testing devops)
 
 echo "📁 Skills 디렉토리 생성: $SKILLS_DIR"
 mkdir -p "$SKILLS_DIR"

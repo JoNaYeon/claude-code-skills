@@ -6,6 +6,13 @@ Claude Code에서 사용하는 개인 스킬 템플릿 모음입니다.
 
 ## 스킬 목록
 
+### 🔀 Git
+| 스킬 | 설명 |
+|------|------|
+| [git-diff-summary](./git/git-diff-summary/SKILL.md) | 이전 커밋과 현재 코드의 변경사항 요약 |
+| [git-start](./git/git-start/SKILL.md) | 작업 전 레포 준비 및 브랜치 생성 |
+| [git-finish](./git/git-finish/SKILL.md) | 작업 후 커밋·푸시 및 GitHub Issue 등록 |
+
 ### 🖥️ Coding
 | 스킬 | 설명 |
 |------|------|
