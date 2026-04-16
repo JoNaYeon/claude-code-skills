@@ -36,6 +36,7 @@ Claude Code에서 사용하는 개인 스킬, 커맨드, 프로젝트 템플릿 
 | [security-audit](./coding/security-audit/SKILL.md) | OWASP 기준 보안 취약점 탐지 |
 | [dependency-audit](./coding/dependency-audit/SKILL.md) | 취약하거나 오래된 패키지 탐지 및 업데이트 |
 | [project-review](./coding/project-review/SKILL.md) | 프로젝트 전체 종합 리뷰 — 구조·DB·보안·함수·TODO·버그를 README로 생성 |
+| [web-scaffold](./coding/web-scaffold/SKILL.md) | 제목·역할·기능 입력 → Flask+JS 웹 프로젝트 자동 생성 (Git 레포까지) |
 
 ### 📄 Documentation
 | 스킬 | 설명 |
@@ -238,7 +239,7 @@ claude-code-skills/
 │   ├── notes/              #   Obsidian 노트 템플릿 (knowledge, scrap, daily 등)
 │   ├── project-pack/       #   PM 라이프사이클 문서 (context → PRD → task → batch)
 │   └── skill-name/         #   새 스킬 생성용 보일러플레이트
-├── coding/                 # 코딩 스킬 (code-review, refactor, debug, security, deps)
+├── coding/                 # 코딩 스킬 (code-review, refactor, debug, security, deps, web-scaffold)
 ├── documentation/          # 문서화 스킬 (api-docs, code-explain, readme)
 ├── git/                    # Git 워크플로우 스킬 (start, finish, diff, PR, changelog, conflict)
 ├── productivity/           # 생산성 스킬 (commit-message)
