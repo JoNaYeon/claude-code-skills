@@ -35,6 +35,7 @@ Claude Code에서 사용하는 개인 스킬, 커맨드, 프로젝트 템플릿 
 | [debug-guide](./coding/debug-guide/SKILL.md) | 에러·스택 트레이스 분석 및 수정 (JS/Python/Go/Java) |
 | [security-audit](./coding/security-audit/SKILL.md) | OWASP 기준 보안 취약점 탐지 |
 | [dependency-audit](./coding/dependency-audit/SKILL.md) | 취약하거나 오래된 패키지 탐지 및 업데이트 |
+| [project-review](./coding/project-review/SKILL.md) | 프로젝트 전체 종합 리뷰 — 구조·DB·보안·함수·TODO·버그를 README로 생성 |
 
 ### 📄 Documentation
 | 스킬 | 설명 |
