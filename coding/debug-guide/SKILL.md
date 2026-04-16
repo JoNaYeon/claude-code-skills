@@ -37,9 +37,24 @@ description: "Use this skill when the user encounters an error, exception, or bu
 
 ### 4. 수정
 원인이 명확하면 바로 수정합니다.
-불명확하면 가설을 세우고 디버깅 포인트를 추가합니다:
+불명확하면 가설을 세우고 언어에 맞는 디버깅 포인트를 추가합니다:
+
 ```js
+// JavaScript / TypeScript
 console.log('[DEBUG]', 변수명, typeof 변수명);
+```
+```python
+# Python
+print(f"[DEBUG] {변수명=}, {type(변수명)=}")
+import traceback; traceback.print_exc()
+```
+```go
+// Go
+log.Printf("[DEBUG] %+v (%T)\n", 변수명, 변수명)
+```
+```java
+// Java
+System.out.printf("[DEBUG] %s (%s)%n", 변수명, 변수명.getClass().getName());
 ```
 
 ### 5. 재발 방지

@@ -10,21 +10,35 @@ description: "Use this skill when the user wants to create a pull request, write
 
 ## 지침
 
-### 1. 변경사항 수집
+### 1. 베이스 브랜치 감지 및 확인
 ```bash
-git log main..HEAD --oneline        # 커밋 목록
-git diff main...HEAD --stat         # 변경 파일 요약
-git diff main...HEAD                # 전체 diff
+# 기본 브랜치 자동 감지
+git remote show origin | grep 'HEAD branch'
+# 또는
+git symbolic-ref refs/remotes/origin/HEAD
+```
+사용자에게 확인합니다:
+> 어느 브랜치로 PR을 보낼까요? (감지된 기본 브랜치: main/master/develop)
+
+### 2. 현재 브랜치가 push되었는지 확인
+```bash
+git log origin/<현재 브랜치>..HEAD --oneline 2>/dev/null
+```
+- 아직 push되지 않은 커밋이 있으면 먼저 push합니다: `git push -u origin <현재 브랜치>`
+
+### 3. 변경사항 수집
+```bash
+git log <base>..HEAD --oneline        # 커밋 목록
+git diff <base>...HEAD --stat         # 변경 파일 요약
+git diff <base>...HEAD                # 전체 diff
 ```
 
-### 2. 베이스 브랜치 확인
-사용자에게 묻습니다:
-> 어느 브랜치로 PR을 보낼까요? (기본: main)
-
-### 3. PR 내용 작성
+### 4. PR 내용 작성
 변경사항을 분석하여 아래 형식으로 PR 본문을 작성합니다.
+- 제목은 70자 이내, Conventional Commits 스타일 권장
+- 커밋이 여러 개면 모든 커밋의 변경 내용을 종합합니다.
 
-### 4. PR 생성
+### 5. PR 생성
 ```bash
 gh pr create --title "<제목>" --body "<내용>" --base <베이스 브랜치>
 ```

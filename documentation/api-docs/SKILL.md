@@ -1,6 +1,6 @@
 ---
 name: api-docs
-description: "Use this skill when the user asks to generate API documentation, document endpoints, or create API references from source code. Triggers on: 'document this API', 'generate API docs', 'write endpoint documentation', 'create API reference'."
+description: "Use this skill when the user asks to generate API documentation, document endpoints, or create API references from source code. Triggers on: 'document this API', 'generate API docs', 'write endpoint documentation', 'create API reference', 'API 문서 만들어줘', 'API 문서화', '엔드포인트 정리해줘'."
 ---
 
 # API Documentation Generator

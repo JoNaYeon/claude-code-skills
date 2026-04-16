@@ -1,6 +1,6 @@
 ---
 name: dockerfile
-description: "Use this skill when the user asks to create, review, or optimize a Dockerfile. Triggers on: 'create a Dockerfile', 'write Dockerfile', 'review my Dockerfile', 'optimize Docker image', 'containerize this app', 'Docker best practices'."
+description: "Use this skill when the user asks to create, review, or optimize a Dockerfile. Triggers on: 'create a Dockerfile', 'write Dockerfile', 'review my Dockerfile', 'optimize Docker image', 'containerize this app', 'Docker best practices', 'Dockerfile 만들어줘', '도커파일 작성해줘', '도커 이미지 최적화', '컨테이너화해줘'."
 ---
 
 # Dockerfile Generator & Reviewer

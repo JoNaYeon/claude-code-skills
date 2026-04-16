@@ -1,6 +1,6 @@
 ---
 name: refactor-guide
-description: "Use this skill when the user asks to refactor code, improve code structure, reduce duplication, or clean up messy code. Triggers on: 'refactor this', 'clean up this code', 'improve code structure', 'reduce duplication', 'simplify this'."
+description: "Use this skill when the user asks to refactor code, improve code structure, reduce duplication, or clean up messy code. Triggers on: 'refactor this', 'clean up this code', 'improve code structure', 'reduce duplication', 'simplify this', '리팩토링해줘', '코드 정리해줘', '구조 개선', '중복 제거해줘', '코드 깔끔하게'."
 ---
 
 # Refactor Guide

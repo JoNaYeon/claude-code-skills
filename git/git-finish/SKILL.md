@@ -1,6 +1,6 @@
 ---
 name: git-finish
-description: "Use this skill when the user has finished coding and wants to commit, push, and document their work. Triggers on: 'done coding', 'finished', 'push my work', 'commit and push', 'upload to git', 'create issue', '작업 완료', '다 했어', '깃에 올려줘', '커밋해줘', '작업 정리해줘', 'PR 만들어줘'."
+description: "Use this skill when the user has finished coding and wants to commit, push, and document their work. Triggers on: 'done coding', 'finished', 'push my work', 'commit and push', 'upload to git', 'create issue', '작업 완료', '다 했어', '깃에 올려줘', '커밋해줘', '작업 정리해줘'. Note: for PR creation use the pr-creator skill instead."
 ---
 
 # Git Finish — 작업 마무리 & 업로드
@@ -26,9 +26,16 @@ git diff --stat
 ### 3. 커밋 메시지 생성
 `commit-message` 스킬을 활용하여 Conventional Commits 형식으로 생성합니다.
 
-사용자에게 커밋 메시지를 보여주고 확인을 받은 후 커밋합니다:
+사용자에게 커밋 메시지를 보여주고 확인을 받은 후 커밋합니다.
+
+**스테이징 시 주의사항**:
+- `git add -A`를 사용하지 않습니다. 변경 파일을 개별 확인합니다.
+- `.env`, `credentials`, `secret`, `*.pem`, `*.key` 등 민감 파일은 제외합니다.
+- `.gitignore`에 포함되어야 할 파일이 추적되고 있으면 사용자에게 알립니다.
+
 ```bash
-git add -A
+# 안전한 스테이징 — 파일을 명시적으로 지정
+git add <확인된 파일 목록>
 git commit -m "<생성된 커밋 메시지>"
 ```
 
@@ -68,6 +75,7 @@ gh issue create --title "<제목>" --body "<내용>"
 `gh`가 없으면 Issue 내용을 마크다운으로 출력하여 직접 붙여넣을 수 있게 합니다.
 
 ### 6. 완료 보고
+커밋, 푸시, Issue 생성 결과를 한눈에 정리합니다.
 
 ## 출력 형식
 

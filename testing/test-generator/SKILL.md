@@ -1,6 +1,6 @@
 ---
 name: test-generator
-description: "Use this skill when the user asks to generate tests, write unit tests, create test cases, or add test coverage. Triggers on: 'write tests for', 'generate tests', 'add test coverage', 'create test cases', 'unit test this'."
+description: "Use this skill when the user asks to generate tests, write unit tests, create test cases, or add test coverage. Triggers on: 'write tests for', 'generate tests', 'add test coverage', 'create test cases', 'unit test this', '테스트 만들어줘', '테스트 작성해줘', '테스트 코드 짜줘', '테스트 추가해줘'."
 ---
 
 # Test Generator
@@ -34,5 +34,28 @@ description: "Use this skill when the user asks to generate tests, write unit te
 - 모든 테스트가 통과하는지 확인합니다.
 
 ## 출력 형식
-프로젝트의 기존 테스트 패턴에 맞춘 테스트 파일을 생성합니다.
-테스트 실행 결과를 함께 보고합니다.
+
+```markdown
+## 테스트 생성 결과
+
+**대상**: `src/utils/validate.js` → `validateEmail()`
+**프레임워크**: Jest (프로젝트 기존 패턴 따름)
+**생성 파일**: `src/utils/__tests__/validate.test.js`
+
+### 테스트 케이스 (N개)
+| # | 케이스 | 입력 | 기대 결과 |
+|---|--------|------|-----------|
+| 1 | 정상 이메일 | `"a@b.com"` | `true` |
+| 2 | @ 없는 문자열 | `"abc"` | `false` |
+| 3 | 빈 문자열 | `""` | `false` |
+| 4 | null 입력 | `null` | `throw` 또는 `false` |
+
+### 실행 결과
+\`\`\`
+PASS src/utils/__tests__/validate.test.js
+ ✓ 정상 이메일 (2ms)
+ ✓ @ 없는 문자열
+ ...
+Tests: N passed, N total
+\`\`\`
+```

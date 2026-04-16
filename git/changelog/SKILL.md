@@ -20,6 +20,13 @@ git tag --sort=-v:refname | head -5   # 최근 태그 확인
 git log <last-tag>..HEAD --oneline    # 해당 범위 커밋
 ```
 
+**태그가 없는 경우**:
+- 첫 번째 커밋부터 현재까지 모든 커밋을 대상으로 합니다.
+```bash
+git log --oneline                      # 전체 커밋 히스토리
+```
+- 사용자에게 첫 버전 번호를 확인합니다 (기본 제안: v0.1.0 또는 v1.0.0).
+
 ### 2. 커밋 분류
 Conventional Commits 타입 기준으로 분류합니다:
 - `feat` → ✨ New Features

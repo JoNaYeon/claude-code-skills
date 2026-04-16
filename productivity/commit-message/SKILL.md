@@ -1,6 +1,6 @@
 ---
 name: commit-message
-description: "Use this skill when the user asks to generate a commit message, write a commit message, or wants help describing their changes for a git commit. Triggers on: 'write a commit message', 'generate commit message', 'help me commit', 'describe these changes'."
+description: "Use this skill when the user asks to generate a commit message, write a commit message, or wants help describing their changes for a git commit. Triggers on: 'write a commit message', 'generate commit message', 'help me commit', 'describe these changes', '커밋 메시지 만들어줘', '커밋 메시지 써줘', '커밋 메시지 추천'."
 ---
 
 # Commit Message Generator
