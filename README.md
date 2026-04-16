@@ -12,17 +12,25 @@ Claude Code에서 사용하는 개인 스킬 템플릿 모음입니다.
 | [git-diff-summary](./git/git-diff-summary/SKILL.md) | 이전 커밋과 현재 코드의 변경사항 요약 |
 | [git-start](./git/git-start/SKILL.md) | 작업 전 레포 준비 및 브랜치 생성 |
 | [git-finish](./git/git-finish/SKILL.md) | 작업 후 커밋·푸시 및 GitHub Issue 등록 |
+| [pr-creator](./git/pr-creator/SKILL.md) | 변경사항 기반 PR 본문 자동 작성 및 생성 |
+| [changelog](./git/changelog/SKILL.md) | git 히스토리에서 버전별 CHANGELOG 생성 |
+| [conflict-resolver](./git/conflict-resolver/SKILL.md) | Merge/Rebase 충돌 분석 및 해결 제안 |
 
 ### 🖥️ Coding
 | 스킬 | 설명 |
 |------|------|
 | [code-review](./coding/code-review/SKILL.md) | 코드 품질·보안·성능·가독성 체계적 리뷰 |
 | [refactor-guide](./coding/refactor-guide/SKILL.md) | 코드 스멜 탐지 및 리팩토링 제안 |
+| [debug-guide](./coding/debug-guide/SKILL.md) | 에러·스택 트레이스 분석 및 수정 |
+| [security-audit](./coding/security-audit/SKILL.md) | OWASP 기준 보안 취약점 탐지 |
+| [dependency-audit](./coding/dependency-audit/SKILL.md) | 취약하거나 오래된 패키지 탐지 및 업데이트 |
 
 ### 📄 Documentation
 | 스킬 | 설명 |
 |------|------|
 | [api-docs](./documentation/api-docs/SKILL.md) | 소스 코드 기반 API 문서 자동 생성 |
+| [code-explain](./documentation/code-explain/SKILL.md) | 복잡한 코드를 쉽게 설명 (온보딩용) |
+| [readme-generator](./documentation/readme-generator/SKILL.md) | 프로젝트 분석 후 README.md 자동 생성 |
 
 ### ⚡ Productivity
 | 스킬 | 설명 |
