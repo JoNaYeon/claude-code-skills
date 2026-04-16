@@ -59,16 +59,33 @@ description: "Claude가 이 스킬을 사용할 시점을 설명합니다."
 
 ---
 
-## 스킬 설치하기
+## 설치하기 (전역 — 모든 프로젝트에 적용)
 
-스킬 폴더를 프로젝트의 `.claude/skills/` 에 복사하면 됩니다.
+`~/.claude/skills/` 에 설치하면 SSH로 접속한 프로젝트 포함, **모든 프로젝트에서 자동으로 스킬이 인식**됩니다.
 
 ```bash
-# 단일 스킬 복사
-cp -r coding/code-review /path/to/your-project/.claude/skills/
+# 1. 레포 클론 (한 번만)
+git clone https://github.com/JoNaYeon/claude-code-skills.git ~/claude-code-skills
 
-# 여러 스킬 복사
-cp -r coding/code-review coding/refactor-guide /path/to/your-project/.claude/skills/
+# 2. 설치 스크립트 실행 (심볼릭 링크 자동 생성)
+cd ~/claude-code-skills
+bash install.sh
+```
+
+이후 레포에 새 스킬이 추가되면:
+```bash
+cd ~/claude-code-skills && git pull
+bash install.sh  # 새 스킬만 추가로 링크됨
+```
+
+---
+
+## 설치하기 (프로젝트별)
+
+특정 프로젝트에만 스킬을 넣고 싶을 때:
+
+```bash
+cp -r coding/code-review /path/to/your-project/.claude/skills/
 ```
 
 Windows (PowerShell):
