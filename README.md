@@ -49,6 +49,8 @@ Claude Code에서 사용하는 개인 스킬, 커맨드, 프로젝트 템플릿 
 | 스킬 | 설명 |
 |------|------|
 | [commit-message](./productivity/commit-message/SKILL.md) | 변경사항 분석 후 Conventional Commits 메시지 생성 |
+| [morning-briefing](./productivity/morning-briefing/SKILL.md) | 아침 브리핑 — Google 캘린더·Tasks·뉴스·Gmail 통합 요약 |
+| [daily-report](./productivity/daily-report/SKILL.md) | GitHub Issues 분류·요약 후 Slack 채널에 데일리 리포트 업로드 |
 
 ### 🧪 Testing
 | 스킬 | 설명 |
@@ -59,6 +61,33 @@ Claude Code에서 사용하는 개인 스킬, 커맨드, 프로젝트 템플릿 
 | 스킬 | 설명 |
 |------|------|
 | [dockerfile](./devops/dockerfile/SKILL.md) | Dockerfile 생성 및 베스트 프랙티스 기반 리뷰 |
+
+### 🤖 AI
+프로젝트에 AI 스킬 세팅·평가·운영을 위한 워크플로우 스킬입니다. (`_template/ai/` 의 문서형 템플릿을 실행 가능한 스킬로 변환)
+
+| 스킬 | 설명 |
+|------|------|
+| [project-skill-kickoff](./ai/project-skill-kickoff/SKILL.md) | 새 프로젝트 시작 시 AI 스킬 컨텍스트 세팅 |
+| [project-archetype-selector](./ai/project-archetype-selector/SKILL.md) | 프로젝트 아키타입 분류 & 최적 스킬 추천 |
+| [skill-evaluation](./ai/skill-evaluation/SKILL.md) | 외부 스킬 도입 전 신뢰성·적합성 평가 |
+| [custom-local-skill-draft](./ai/custom-local-skill-draft/SKILL.md) | 프로젝트 전용 커스텀 로컬 스킬 초안 작성 |
+| [project-git-workflow](./ai/project-git-workflow/SKILL.md) | 프로젝트 Git 워크플로우 정의·문서화 |
+| [project-code-quality-security](./ai/project-code-quality-security/SKILL.md) | 코드 품질 & 보안 기준 설정 |
+| [project-orchestrator-session-start](./ai/project-orchestrator-session-start/SKILL.md) | 오케스트레이터 세션 시작 & 컨텍스트 로딩 |
+| [pm-planning-workflow](./ai/pm-planning-workflow/SKILL.md) | PM 기획 워크플로우 (기능 브리프, UX, 백로그) |
+| [mission-control](./ai/mission-control/SKILL.md) | 프로젝트 관제 센터 (태스크, 백로그, 대시보드) |
+
+### 🗂 Navigation (카테고리 메뉴)
+`/` 치면 스킬이 너무 많이 뜰 때 카테고리별로 묶어서 보여주는 라우터 스킬입니다.
+
+| 스킬 | 설명 |
+|------|------|
+| [menu](./navigation/menu/SKILL.md) | 전체 스킬 카테고리 통합 메뉴 |
+| [ai-menu](./navigation/ai-menu/SKILL.md) | AI 스킬 카테고리 서브메뉴 |
+| [git-menu](./navigation/git-menu/SKILL.md) | Git 스킬 카테고리 서브메뉴 |
+| [coding-menu](./navigation/coding-menu/SKILL.md) | Coding 스킬 카테고리 서브메뉴 |
+| [docs-menu](./navigation/docs-menu/SKILL.md) | Documentation 스킬 카테고리 서브메뉴 |
+| [devops-menu](./navigation/devops-menu/SKILL.md) | DevOps 스킬 카테고리 서브메뉴 |
 
 ---
 
@@ -239,10 +268,12 @@ claude-code-skills/
 │   ├── notes/              #   Obsidian 노트 템플릿 (knowledge, scrap, daily 등)
 │   ├── project-pack/       #   PM 라이프사이클 문서 (context → PRD → task → batch)
 │   └── skill-name/         #   새 스킬 생성용 보일러플레이트
+├── ai/                     # AI 워크플로우 스킬 (kickoff, archetype, evaluation, mission-control 등)
 ├── coding/                 # 코딩 스킬 (code-review, refactor, debug, security, deps, web-scaffold)
 ├── documentation/          # 문서화 스킬 (api-docs, code-explain, readme)
 ├── git/                    # Git 워크플로우 스킬 (start, finish, diff, PR, changelog, conflict)
-├── productivity/           # 생산성 스킬 (commit-message)
+├── navigation/             # 카테고리 메뉴 스킬 (menu, ai-menu, git-menu 등)
+├── productivity/           # 생산성 스킬 (commit-message, morning-briefing, daily-report)
 ├── testing/                # 테스트 스킬 (test-generator)
 ├── devops/                 # DevOps 스킬 (dockerfile)
 ├── install.sh              # 전역 설치 스크립트
