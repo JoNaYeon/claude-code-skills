@@ -119,6 +119,7 @@ work/git/work_git_git-start/SKILL.md
 | 스킬 | 설명 |
 |------|------|
 | [`/study_engineering-note`](./study/study_engineering-note/SKILL.md) | 대화 중 배운 기술/엔지니어링 개념을 Notion 엔지니어링 문서에 구조화해서 페이지로 정리 |
+| [`/study_memo`](./study/study_memo/SKILL.md) | 파일·링크·텍스트를 Notion MEMO DB에 속성(idea/news/book/note/work/ect)별 맞춤 템플릿으로 정리 |
 
 ---
 
