@@ -17,77 +17,94 @@ Claude Code에서 사용하는 개인 스킬, 커맨드, 프로젝트 템플릿 
 
 ## 스킬 목록
 
-### 🔀 Git
+스킬은 용도에 따라 **업무용 / 일상용 / 기타** 로 구분되어 있습니다.
+
+---
+
+## 💼 업무용 (`work/`)
+
+### 🔀 Git (`work/git/`)
 | 스킬 | 설명 |
 |------|------|
-| [git-diff-summary](./git/git-diff-summary/SKILL.md) | 이전 커밋과 현재 코드의 변경사항 요약 |
-| [git-start](./git/git-start/SKILL.md) | 작업 전 레포 준비 및 브랜치 생성 |
-| [git-finish](./git/git-finish/SKILL.md) | 작업 후 커밋·푸시 및 GitHub Issue 등록 |
-| [pr-creator](./git/pr-creator/SKILL.md) | 변경사항 기반 PR 본문 자동 작성 및 생성 |
-| [changelog](./git/changelog/SKILL.md) | git 히스토리에서 버전별 CHANGELOG 생성 |
-| [conflict-resolver](./git/conflict-resolver/SKILL.md) | Merge/Rebase 충돌 분석 및 해결 제안 |
+| [git-start](./work/git/git-start/SKILL.md) | 작업 전 레포 준비 및 브랜치 생성 |
+| [git-finish](./work/git/git-finish/SKILL.md) | 작업 후 커밋·푸시 및 GitHub Issue 등록 |
+| [git-diff-summary](./work/git/git-diff-summary/SKILL.md) | 이전 커밋과 현재 코드의 변경사항 요약 |
+| [commit-message](./work/git/commit-message/SKILL.md) | 변경사항 분석 후 Conventional Commits 메시지 생성 |
+| [pr-creator](./work/git/pr-creator/SKILL.md) | 변경사항 기반 PR 본문 자동 작성 및 생성 |
+| [changelog](./work/git/changelog/SKILL.md) | git 히스토리에서 버전별 CHANGELOG 생성 |
+| [conflict-resolver](./work/git/conflict-resolver/SKILL.md) | Merge/Rebase 충돌 분석 및 해결 제안 |
 
-### 🖥️ Coding
+### 🖥️ Coding (`work/coding/`)
 | 스킬 | 설명 |
 |------|------|
-| [code-review](./coding/code-review/SKILL.md) | 코드 품질·보안·성능·가독성 체계적 리뷰 |
-| [refactor-guide](./coding/refactor-guide/SKILL.md) | 코드 스멜 탐지 및 리팩토링 제안 |
-| [debug-guide](./coding/debug-guide/SKILL.md) | 에러·스택 트레이스 분석 및 수정 (JS/Python/Go/Java) |
-| [security-audit](./coding/security-audit/SKILL.md) | OWASP 기준 보안 취약점 탐지 |
-| [dependency-audit](./coding/dependency-audit/SKILL.md) | 취약하거나 오래된 패키지 탐지 및 업데이트 |
-| [project-review](./coding/project-review/SKILL.md) | 프로젝트 전체 종합 리뷰 — 구조·DB·보안·함수·TODO·버그를 README로 생성 |
-| [web-scaffold](./coding/web-scaffold/SKILL.md) | 제목·역할·기능 입력 → Flask+JS 웹 프로젝트 자동 생성 (Git 레포까지) |
+| [code-review](./work/coding/code-review/SKILL.md) | 코드 품질·보안·성능·가독성 체계적 리뷰 |
+| [refactor-guide](./work/coding/refactor-guide/SKILL.md) | 코드 스멜 탐지 및 리팩토링 제안 |
+| [debug-guide](./work/coding/debug-guide/SKILL.md) | 에러·스택 트레이스 분석 및 수정 (JS/Python/Go/Java) |
+| [security-audit](./work/coding/security-audit/SKILL.md) | OWASP 기준 보안 취약점 탐지 |
+| [dependency-audit](./work/coding/dependency-audit/SKILL.md) | 취약하거나 오래된 패키지 탐지 및 업데이트 |
+| [project-review](./work/coding/project-review/SKILL.md) | 프로젝트 전체 종합 리뷰 — 구조·DB·보안·함수·TODO·버그를 README로 생성 |
+| [web-scaffold](./work/coding/web-scaffold/SKILL.md) | 제목·역할·기능 입력 → Flask+JS 웹 프로젝트 자동 생성 (Git 레포까지) |
 
-### 📄 Documentation
+### 📄 Docs (`work/docs/`)
 | 스킬 | 설명 |
 |------|------|
-| [api-docs](./documentation/api-docs/SKILL.md) | 소스 코드 기반 API 문서 자동 생성 |
-| [code-explain](./documentation/code-explain/SKILL.md) | 복잡한 코드를 쉽게 설명 (온보딩용) |
-| [readme-generator](./documentation/readme-generator/SKILL.md) | 프로젝트 분석 후 README.md 자동 생성 |
+| [api-docs](./work/docs/api-docs/SKILL.md) | 소스 코드 기반 API 문서 자동 생성 |
+| [code-explain](./work/docs/code-explain/SKILL.md) | 복잡한 코드를 쉽게 설명 (온보딩용) |
+| [readme-generator](./work/docs/readme-generator/SKILL.md) | 프로젝트 분석 후 README.md 자동 생성 |
 
-### ⚡ Productivity
+### 🐳 DevOps (`work/devops/`)
 | 스킬 | 설명 |
 |------|------|
-| [commit-message](./productivity/commit-message/SKILL.md) | 변경사항 분석 후 Conventional Commits 메시지 생성 |
-| [morning-briefing](./productivity/morning-briefing/SKILL.md) | 아침 브리핑 — Google 캘린더·Tasks·뉴스·Gmail 통합 요약 |
-| [daily-report](./productivity/daily-report/SKILL.md) | GitHub Issues 분류·요약 후 Slack 채널에 데일리 리포트 업로드 |
+| [dockerfile](./work/devops/dockerfile/SKILL.md) | Dockerfile 생성 및 베스트 프랙티스 기반 리뷰 |
 
-### 🧪 Testing
+### 🧪 Testing (`work/testing/`)
 | 스킬 | 설명 |
 |------|------|
-| [test-generator](./testing/test-generator/SKILL.md) | 함수/모듈에 대한 단위 테스트 자동 생성 |
+| [test-generator](./work/testing/test-generator/SKILL.md) | 함수/모듈에 대한 단위 테스트 자동 생성 |
 
-### 🐳 DevOps
-| 스킬 | 설명 |
-|------|------|
-| [dockerfile](./devops/dockerfile/SKILL.md) | Dockerfile 생성 및 베스트 프랙티스 기반 리뷰 |
-
-### 🤖 AI
-프로젝트에 AI 스킬 세팅·평가·운영을 위한 워크플로우 스킬입니다.
+### 🤖 AI / PM (`work/ai/`)
+프로젝트에 AI 스킬 세팅·평가·운영을 위한 PM 워크플로우 스킬입니다.
 
 | 스킬 | 설명 |
 |------|------|
-| [project-skill-kickoff](./ai/project-skill-kickoff/SKILL.md) | 새 프로젝트 시작 시 AI 스킬 컨텍스트 세팅 |
-| [project-archetype-selector](./ai/project-archetype-selector/SKILL.md) | 프로젝트 아키타입 분류 & 최적 스킬 추천 |
-| [skill-evaluation](./ai/skill-evaluation/SKILL.md) | 외부 스킬 도입 전 신뢰성·적합성 평가 |
-| [custom-local-skill-draft](./ai/custom-local-skill-draft/SKILL.md) | 프로젝트 전용 커스텀 로컬 스킬 초안 작성 |
-| [project-git-workflow](./ai/project-git-workflow/SKILL.md) | 프로젝트 Git 워크플로우 정의·문서화 |
-| [project-code-quality-security](./ai/project-code-quality-security/SKILL.md) | 코드 품질 & 보안 기준 설정 |
-| [project-orchestrator-session-start](./ai/project-orchestrator-session-start/SKILL.md) | 오케스트레이터 세션 시작 & 컨텍스트 로딩 |
-| [pm-planning-workflow](./ai/pm-planning-workflow/SKILL.md) | PM 기획 워크플로우 (기능 브리프, UX, 백로그) |
-| [mission-control](./ai/mission-control/SKILL.md) | 프로젝트 관제 센터 (태스크, 백로그, 대시보드) |
+| [project-skill-kickoff](./work/ai/project-skill-kickoff/SKILL.md) | 새 프로젝트 시작 시 AI 스킬 컨텍스트 세팅 |
+| [project-archetype-selector](./work/ai/project-archetype-selector/SKILL.md) | 프로젝트 아키타입 분류 & 최적 스킬 추천 |
+| [skill-evaluation](./work/ai/skill-evaluation/SKILL.md) | 외부 스킬 도입 전 신뢰성·적합성 평가 |
+| [custom-local-skill-draft](./work/ai/custom-local-skill-draft/SKILL.md) | 프로젝트 전용 커스텀 로컬 스킬 초안 작성 |
+| [project-git-workflow](./work/ai/project-git-workflow/SKILL.md) | 프로젝트 Git 워크플로우 정의·문서화 |
+| [project-code-quality-security](./work/ai/project-code-quality-security/SKILL.md) | 코드 품질 & 보안 기준 설정 |
+| [project-orchestrator-session-start](./work/ai/project-orchestrator-session-start/SKILL.md) | 오케스트레이터 세션 시작 & 컨텍스트 로딩 |
+| [pm-planning-workflow](./work/ai/pm-planning-workflow/SKILL.md) | PM 기획 워크플로우 (기능 브리프, UX, 백로그) |
+| [mission-control](./work/ai/mission-control/SKILL.md) | 프로젝트 관제 센터 (태스크, 백로그, 대시보드) |
 
-### 🗂 Navigation (카테고리 메뉴)
+### 📤 Reporting (`work/reporting/`)
+| 스킬 | 설명 |
+|------|------|
+| [daily-report](./work/reporting/daily-report/SKILL.md) | GitHub Issues 분류·요약 후 Slack 채널에 데일리 리포트 업로드 |
+
+---
+
+## 🌅 일상용 (`daily/`)
+
+| 스킬 | 설명 |
+|------|------|
+| [morning-briefing](./daily/morning-briefing/SKILL.md) | 아침 브리핑 — Google 캘린더·Tasks·뉴스·Gmail 통합 요약 |
+
+---
+
+## 🧰 기타 (`misc/`)
+
+### 🗂 Navigation (`misc/navigation/`)
 `/` 치면 스킬이 너무 많이 뜰 때 카테고리별로 묶어서 보여주는 라우터 스킬입니다.
 
 | 스킬 | 설명 |
 |------|------|
-| [menu](./navigation/menu/SKILL.md) | 전체 스킬 카테고리 통합 메뉴 |
-| [ai-menu](./navigation/ai-menu/SKILL.md) | AI 스킬 카테고리 서브메뉴 |
-| [git-menu](./navigation/git-menu/SKILL.md) | Git 스킬 카테고리 서브메뉴 |
-| [coding-menu](./navigation/coding-menu/SKILL.md) | Coding 스킬 카테고리 서브메뉴 |
-| [docs-menu](./navigation/docs-menu/SKILL.md) | Documentation 스킬 카테고리 서브메뉴 |
-| [devops-menu](./navigation/devops-menu/SKILL.md) | DevOps 스킬 카테고리 서브메뉴 |
+| [menu](./misc/navigation/menu/SKILL.md) | 전체 스킬 카테고리 통합 메뉴 |
+| [ai-menu](./misc/navigation/ai-menu/SKILL.md) | AI 스킬 카테고리 서브메뉴 |
+| [git-menu](./misc/navigation/git-menu/SKILL.md) | Git 스킬 카테고리 서브메뉴 |
+| [coding-menu](./misc/navigation/coding-menu/SKILL.md) | Coding 스킬 카테고리 서브메뉴 |
+| [docs-menu](./misc/navigation/docs-menu/SKILL.md) | Documentation 스킬 카테고리 서브메뉴 |
+| [devops-menu](./misc/navigation/devops-menu/SKILL.md) | DevOps 스킬 카테고리 서브메뉴 |
 
 ---
 
@@ -213,12 +230,12 @@ bash install.sh  # 새 스킬만 추가로 링크됨
 특정 프로젝트에만 스킬을 넣고 싶을 때:
 
 ```bash
-cp -r coding/code-review /path/to/your-project/.claude/skills/
+cp -r work/coding/code-review /path/to/your-project/.claude/skills/
 ```
 
 Windows (PowerShell):
 ```powershell
-Copy-Item -Recurse coding\code-review .claude\skills\
+Copy-Item -Recurse work\coding\code-review .claude\skills\
 ```
 
 ---
@@ -227,7 +244,11 @@ Copy-Item -Recurse coding\code-review .claude\skills\
 
 1. **템플릿 복사**
    ```bash
-   cp -r _template/skill-name <category>/<new-skill-name>
+   # 업무용 예: work/<category>/<new-skill-name>
+   cp -r _template/skill-name work/coding/my-new-skill
+
+   # 일상용 예: daily/<new-skill-name>
+   cp -r _template/skill-name daily/my-new-skill
    ```
 
 2. **SKILL.md 편집**
@@ -253,14 +274,17 @@ claude-code-skills/
 │   ├── notes/              #   Obsidian 노트 템플릿 (knowledge, scrap, daily 등)
 │   ├── project-pack/       #   PM 라이프사이클 문서 (context → PRD → task → batch)
 │   └── skill-name/         #   새 스킬 생성용 보일러플레이트
-├── ai/                     # AI 워크플로우 스킬 (kickoff, archetype, evaluation, mission-control 등)
-├── coding/                 # 코딩 스킬 (code-review, refactor, debug, security, deps, web-scaffold)
-├── documentation/          # 문서화 스킬 (api-docs, code-explain, readme)
-├── git/                    # Git 워크플로우 스킬 (start, finish, diff, PR, changelog, conflict)
-├── navigation/             # 카테고리 메뉴 스킬 (menu, ai-menu, git-menu 등)
-├── productivity/           # 생산성 스킬 (commit-message, morning-briefing, daily-report)
-├── testing/                # 테스트 스킬 (test-generator)
-├── devops/                 # DevOps 스킬 (dockerfile)
+├── work/                   # 업무용 스킬
+│   ├── ai/                 #   AI/PM 워크플로우 (kickoff, archetype, mission-control 등)
+│   ├── coding/             #   코딩 (code-review, refactor, debug, security, deps, web-scaffold)
+│   ├── docs/               #   문서화 (api-docs, code-explain, readme-generator)
+│   ├── git/                #   Git (start, finish, diff, commit-message, PR, changelog, conflict)
+│   ├── devops/             #   DevOps (dockerfile)
+│   ├── testing/            #   테스트 (test-generator)
+│   └── reporting/          #   업무 보고 (daily-report)
+├── daily/                  # 일상용 스킬 (morning-briefing)
+├── misc/                   # 기타
+│   └── navigation/         #   카테고리 메뉴 라우터 (menu, ai-menu, git-menu 등)
 ├── install.sh              # 전역 설치 스크립트
 ├── LICENSE                 # MIT
 └── README.md
