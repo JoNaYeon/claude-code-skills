@@ -2,7 +2,7 @@
 description: "Use this skill as a mission control center for project task management, backlog, meeting notes, and integrated status dashboard. Triggers on: 'mission control', 'project dashboard', 'task management', 'backlog', '미션 컨트롤', '프로젝트 관제'."
 ---
 
-# /work/ai/mission-control — {{project}} 관제
+# /work-ai-mission_control — {{project}} 관제
 
 프로젝트 과업 관리 제어센터.
 백로그 관리, 회의록 인제스트, Todoist 양방향 동기화, 통합 현황 대시보드.

@@ -145,7 +145,7 @@ Reference:
 - 폰트 설정: (예: Pretendard Regular/Bold)
 - 에러 핸들링 규칙: (예: 혼합 폰트 → Regular 통일 후 재시도)
 
-## 5-1. Skill Definition — /work/ai/mission-control (/관제)
+## 5-1. Skill Definition — /work-ai-mission_control (/관제)
 
 > 전체 스펙은 [[08_Mission Control Skill]] 을 참조한다. 아래는 요약.
 > 프로젝트 적용 시 해당 템플릿을 `.claude/commands/mission-control.md`로 복사하고 `{{변수}}`를 치환한다.
@@ -234,7 +234,7 @@ Use this note as the PM Planning workflow template for the project.
 Instructions:
 - Set up 2 pipelines:
   1. Planning: /plan-feature → /write-spec → /update-figma-doc
-  2. Mission Control: /work/ai/mission-control (status/ingest/sync/triage/add)
+  2. Mission Control: /work-ai-mission_control (status/ingest/sync/triage/add)
 
 - /plan-feature: 3 phases (context → discussion → Feature Brief)
   - Phase 2 uses structured question flow: problem → requirements → UX flow (2+ alternatives) → impact analysis
@@ -242,7 +242,7 @@ Instructions:
   - Legal review via MCP if applicable
 - /write-spec: Adapt output format to the project's tech doc standard
 - /update-figma-doc: Map target node IDs and configure font/error handling
-- /work/ai/mission-control: Configure backlog.md, backlog-sync.json, Todoist MCP (mcp-remote OAuth), meeting note paths, and Obsidian mirror path
+- /work-ai-mission_control: Configure backlog.md, backlog-sync.json, Todoist MCP (mcp-remote OAuth), meeting note paths, and Obsidian mirror path
 - Todoist MCP: Use `npx -y mcp-remote https://ai.todoist.net/mcp` (OAuth, no API token env var needed)
 - Create Korean aliases if the team prefers Korean commands
 - Run one end-to-end test for each pipeline before marking setup complete
