@@ -3,13 +3,6 @@ name: skill-evaluation
 description: "Use this skill to evaluate and review a candidate skill before installing it. Triggers on: 'evaluate skill', 'review skill', 'should I install this skill', 'skill trust check', '스킬 평가', '스킬 검토'."
 ---
 
----
-type: skill-evaluation
-created: {{date}}
-updated: {{date}}
-tags: [ai, skills, evaluation]
-status: review
----
 
 # Skill Evaluation: {{title}}
 

@@ -3,13 +3,6 @@ name: project-orchestrator-session-start
 description: "Use this skill to start an orchestrator session for a project with full context loading. Triggers on: 'orchestrator session', 'session start', 'load project context', 'start session', '오케스트레이터 시작', '세션 시작'."
 ---
 
----
-type: project-orchestrator-session-start
-created: {{date}}
-updated: {{date}}
-tags: [ai, orchestration, batch, session-start]
-status: draft
----
 
 # Project Orchestrator Session Start: {{title}}
 

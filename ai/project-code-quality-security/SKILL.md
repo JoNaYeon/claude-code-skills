@@ -3,13 +3,6 @@ name: project-code-quality-security
 description: "Use this skill to set up code quality and security standards for a project. Triggers on: 'code quality', 'security standards', 'lint setup', 'security audit setup', '코드 품질', '보안 설정'."
 ---
 
----
-type: project-code-quality-and-security
-created: {{date}}
-updated: {{date}}
-tags: [ai, code-quality, security, lint, validation, workflow]
-status: draft
----
 
 # Project Code Quality And Security: {{title}}
 

@@ -3,13 +3,6 @@ name: custom-local-skill-draft
 description: "Use this skill to draft a new custom local skill tailored to a specific project workflow. Triggers on: 'create custom skill', 'write local skill', 'draft new skill', 'custom skill', '커스텀 스킬 만들기', '로컬 스킬 작성'."
 ---
 
----
-type: custom-skill-draft
-created: {{date}}
-updated: {{date}}
-tags: [ai, skills, local-skill]
-status: draft
----
 
 # Custom Local Skill Draft: {{title}}
 

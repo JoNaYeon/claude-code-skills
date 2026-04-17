@@ -3,13 +3,6 @@ name: project-skill-kickoff
 description: "Use this skill when starting a new project and needing to set up AI skill context, identify repeated tasks, and select best-fit skills. Triggers on: 'project kickoff', 'skill kickoff', 'start new project', 'setup project skills', '프로젝트 시작', '스킬 세팅'."
 ---
 
----
-type: agent-skill-context
-created: {{date}}
-updated: {{date}}
-tags: [ai, skills, project-context]
-status: draft
----
 
 # Project Skill Kickoff: {{title}}
 

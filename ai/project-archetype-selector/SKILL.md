@@ -3,13 +3,6 @@ name: project-archetype-selector
 description: "Use this skill to identify a project's archetype and select the most relevant skills. Triggers on: 'select archetype', 'project type', 'what kind of project', 'choose skills for project', '프로젝트 아키타입', '프로젝트 유형 선택'."
 ---
 
----
-type: project-archetype-selector
-created: {{date}}
-updated: {{date}}
-tags: [ai, skills, archetype]
-status: draft
----
 
 # Project Archetype Selector: {{title}}
 

@@ -119,21 +119,7 @@ Claude Code에서 사용하는 개인 스킬, 커맨드, 프로젝트 템플릿 
 
 `_template/` 에 위치한 프로젝트·노트·AI 스킬 템플릿입니다.
 
-### 🤖 AI 스킬 템플릿 (`_template/ai/`)
-
-프로젝트에 AI를 세팅하기 위한 단계별 워크플로우 문서입니다.
-
-| # | 템플릿 | 설명 |
-|---|--------|------|
-| 00 | [Project Skill Kickoff](./_template/ai/00_Project%20Skill%20Kickoff.md) | 프로젝트 스냅샷 + 기술/도메인 컨텍스트 정리 |
-| 01 | [Project Archetype Selector](./_template/ai/01_Project%20Archetype%20Selector.md) | 프로젝트 아키타입(유형) 선택 및 반복 작업 식별 |
-| 01 | [Skill Evaluation](./_template/ai/01_Skill%20Evaluation.md) | 외부 스킬 신뢰성·호환성 평가 및 도입 판단 |
-| 02 | [Custom Local Skill Draft](./_template/ai/02_Custom%20Local%20Skill%20Draft.md) | 로컬 커스텀 스킬 직접 설계 드래프트 |
-| 03 | [Project Git Workflow](./_template/ai/03_Project%20Git%20Workflow.md) | AI+사람 공용 브랜치·커밋·배포 규칙 정의 |
-| 04 | [Code Quality And Security](./_template/ai/04_Project%20Code%20Quality%20And%20Security.md) | 코드 품질 게이트 + AI 보안 방어 체계 통합 정의 |
-| 05 | [Orchestrator Session Start](./_template/ai/05_Project%20Orchestrator%20Session%20Start.md) | 세션 시작 시 최소 컨텍스트 제공 (디바이스 무관) |
-| 06 | [PM Planning Workflow](./_template/ai/06_PM%20Planning%20Workflow.md) | 기획 논의 → 기술문서·디자인 반영까지 PM 워크플로우 |
-| 08 | [Mission Control Skill](./_template/ai/08_Mission%20Control%20Skill.md) | 과업 관제센터 — 백로그 관리, 회의록 인제스트, 대시보드 |
+> **Note:** AI 스킬 템플릿은 실행 가능한 스킬 형태로 통합되었습니다 → [🤖 AI 스킬 섹션](#-ai)
 
 ### 📝 노트 템플릿 (`_template/notes/`)
 
@@ -264,7 +250,6 @@ claude-code-skills/
 │   ├── intake/             #   콘텐츠 인제스트 (article, book, pdf, youtube, verify)
 │   └── research/           #   리서치 (web)
 ├── _template/              # 템플릿 모음
-│   ├── ai/                 #   AI 스킬 세팅 워크플로우 (00~08)
 │   ├── notes/              #   Obsidian 노트 템플릿 (knowledge, scrap, daily 등)
 │   ├── project-pack/       #   PM 라이프사이클 문서 (context → PRD → task → batch)
 │   └── skill-name/         #   새 스킬 생성용 보일러플레이트

@@ -3,13 +3,6 @@ name: pm-planning-workflow
 description: "Use this skill for PM planning workflows including feature briefs, UX planning, and backlog management. Triggers on: 'pm planning', 'feature brief', 'ux planning', 'product planning', 'PM 플래닝', '기능 기획'."
 ---
 
----
-type: pm-planning-workflow
-created: {{date}}
-updated: {{date}}
-tags: [ai, pm, planning, ux, feature-brief]
-status: draft
----
 
 # PM Planning Workflow: {{title}}
 

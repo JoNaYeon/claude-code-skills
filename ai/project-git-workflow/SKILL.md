@@ -3,13 +3,6 @@ name: project-git-workflow
 description: "Use this skill to define and document Git workflow rules for a project including branch policy, commit rules, and AI agent constraints. Triggers on: 'git workflow', 'branch policy', 'commit rules', 'git rules', '깃 워크플로우', '브랜치 정책'."
 ---
 
----
-type: project-git-workflow
-created: {{date}}
-updated: {{date}}
-tags: [ai, git, workflow, collaboration]
-status: draft
----
 
 # Project Git Workflow: {{title}}
 
