@@ -112,6 +112,16 @@ work/git/work_git_git-start/SKILL.md
 
 ---
 
+## 📚 Study (`study/`)
+
+개인 학습/기술 습득 관련 스킬입니다.
+
+| 스킬 | 설명 |
+|------|------|
+| [`/study_engineering-note`](./study/study_engineering-note/SKILL.md) | 대화 중 배운 기술/엔지니어링 개념을 Notion 엔지니어링 문서에 구조화해서 페이지로 정리 |
+
+---
+
 ## 🌅 일상용 (`daily/`)
 
 | 스킬 | 설명 |
@@ -248,6 +258,7 @@ claude-code-skills/
 │   ├── devops/                  #   work_devops_*  (1)
 │   ├── testing/                 #   work_testing_*  (1)
 │   └── reporting/               #   work_reporting_*  (1)
+├── study/                       # 학습용 스킬 (study_*)
 ├── daily/                       # 일상용 스킬 (daily_*)
 ├── misc/
 │   └── navigation/              # 메뉴 라우터 (misc_navigation_*)
