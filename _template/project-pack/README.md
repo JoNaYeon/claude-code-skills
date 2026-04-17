@@ -9,7 +9,7 @@
 - Vault project pack / Vault tasks 정본을 위한 contract staging
 
 예상 장기 홈:
-- `/Users/gayoungji/Dev/brain-vault/_templates/project-pack/`
+- `<your-vault>/_templates/project-pack/`
 
 현재 포함된 템플릿:
 - `00_Project Context.md`

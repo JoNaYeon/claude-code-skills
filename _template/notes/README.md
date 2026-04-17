@@ -3,7 +3,7 @@
 > 이 폴더는 실제 Brain Vault에 넣을 note template 후보를 먼저 버전 관리하는 staging 공간이다.
 
 목표 경로:
-- `/Users/gayoungji/Dev/brain-vault/_templates/notes/`
+- `<your-vault>/_templates/notes/`
 
 분리 원칙:
 - `_templates/ai/`: 스킬 운영, archetype, evaluation, local skill draft
