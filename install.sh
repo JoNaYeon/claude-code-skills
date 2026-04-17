@@ -1,36 +1,43 @@
 #!/usr/bin/env bash
-# install.sh — ~/.claude/skills/ 에 이 레포의 스킬을 심볼릭 링크로 설치합니다.
+# install.sh — ~/.claude/commands/ 에 이 레포의 슬래시 커맨드를 설치합니다.
 # 사용법: bash install.sh
 #
-# SKILL.md 파일을 가진 폴더를 재귀적으로 탐색하여 자동 설치합니다.
-# _template/ 하위는 제외 (보일러플레이트).
+# .claude/commands/ 하위의 모든 커맨드 파일을 ~/.claude/commands/ 에 심볼릭 링크로 설치.
+# 서브디렉터리 구조(/work/git/start 등)를 그대로 유지합니다.
 
 set -e
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-SKILLS_DIR="$HOME/.claude/skills"
+SRC_DIR="$REPO_DIR/.claude/commands"
+DEST_DIR="$HOME/.claude/commands"
 
-echo "📁 Skills 디렉토리 생성: $SKILLS_DIR"
-mkdir -p "$SKILLS_DIR"
+if [ ! -d "$SRC_DIR" ]; then
+  echo "❌ $SRC_DIR 가 존재하지 않습니다."
+  exit 1
+fi
 
-# SKILL.md 를 가진 모든 폴더를 찾되, _template/ 와 .git/ 은 제외
-while IFS= read -r skill_md; do
-  skill_path="$(dirname "$skill_md")"
-  skill_name="$(basename "$skill_path")"
-  target="$SKILLS_DIR/$skill_name"
+echo "📁 Commands 디렉토리 생성: $DEST_DIR"
+mkdir -p "$DEST_DIR"
 
-  if [ -L "$target" ]; then
-    echo "  ↩️  이미 링크됨: $skill_name (건너뜀)"
-  elif [ -d "$target" ]; then
-    echo "  ⚠️  이미 존재함 (디렉토리): $skill_name (건너뜀)"
+# .md 파일을 찾아 심볼릭 링크 생성. 서브디렉터리 구조 유지.
+while IFS= read -r src_file; do
+  rel="${src_file#$SRC_DIR/}"
+  dest="$DEST_DIR/$rel"
+  dest_parent="$(dirname "$dest")"
+
+  mkdir -p "$dest_parent"
+
+  if [ -L "$dest" ]; then
+    echo "  ↩️  이미 링크됨: /$rel (건너뜀)"
+  elif [ -f "$dest" ]; then
+    echo "  ⚠️  이미 존재함 (파일): /$rel (건너뜀)"
   else
-    ln -s "$skill_path" "$target"
-    echo "  ✅ 링크 생성: $skill_name"
+    ln -s "$src_file" "$dest"
+    # 슬래시 커맨드 이름은 확장자 제거
+    cmd="/${rel%.md}"
+    echo "  ✅ 링크 생성: $cmd"
   fi
-done < <(find "$REPO_DIR" -name "SKILL.md" -type f \
-           -not -path "*/_template/*" \
-           -not -path "*/.git/*")
+done < <(find "$SRC_DIR" -name "*.md" -type f)
 
 echo ""
-echo "완료! 설치된 스킬 목록:"
-ls "$SKILLS_DIR"
+echo "완료! 설치된 커맨드 수: $(find "$DEST_DIR" -name "*.md" -type f | wc -l)"
