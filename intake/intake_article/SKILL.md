@@ -1,4 +1,5 @@
 ---
+name: intake_article
 description: "사용자가 기사, 블로그 글, X 스레드 등을 붙여넣을 때 자동 발동. 4단계 비판적 검증 후 knowledge/ 폴더에 저장."
 ---
 

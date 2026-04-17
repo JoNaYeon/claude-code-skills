@@ -1,4 +1,5 @@
 ---
+name: intake_youtube
 description: "유튜브 영상 내용을 정리할 때 발동. NotebookLM 요약 결과를 붙여넣거나 유튜브 URL을 공유할 때 사용. [2차요약] 태그로 비원본 소스임을 명시."
 ---
 

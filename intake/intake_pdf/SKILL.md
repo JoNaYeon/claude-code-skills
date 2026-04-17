@@ -1,4 +1,5 @@
 ---
+name: intake_pdf
 description: "PDF 리포트 분석 요청 시 발동. inbox-pdf/ 폴더의 PDF를 읽고 4단계 검증 후 knowledge/ 폴더에 저장."
 ---
 
