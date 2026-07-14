@@ -24,8 +24,24 @@
 - 규칙 원문을 여러 문서에 복사하지 않는다(MUST NOT). 상위·원본을 **링크/`_REF` 참조**로 상속한다.
 - 요약·발췌는 허용하되, 상충 시 원본(SSOT)이 우선함을 명시한다.
 
-## P4. General ↔ SEEMEDI 충돌 해결
+## P4. General ↔ 조직 정책 충돌 해결
 
-- General 규칙과 SEEMEDI 특이 규칙이 겹치면, **SEEMEDI 레포 안에서는 SEEMEDI 특이 규칙이 General에 우선**한다(더 엄격한 쪽).
-- SEEMEDI 특이 규칙은 General을 **완화하지 못한다** — 강화만 가능(예: PHI 로깅 금지는 General 로깅 규칙을 더 엄격히 함).
-- 분류 기준은 [02_classification.md](./02_classification.md).
+General 규칙은 **조직 무관 기본값**이고, 각 **조직**은 자체 정책(조직 특이 규칙)을 둔다. General과 조직 정책이 겹칠 때의 해결 원칙이다.
+
+**조직 레지스트리 (현재):**
+
+| 조직 | 도메인 | 규칙 폴더 | 판별 |
+|------|--------|-----------|------|
+| (General) | 조직 무관 공통 | `*/general/` | 기본값(항상 적용) |
+| SEEMEDI | 의료 AI (환자데이터·규제) | `*/seemedi/` | `governance.yaml`·`com.seemedi.*`·`ecg-/edo-/hel-/tlk-` |
+
+> 조직은 늘어날 수 있다. 새 조직 추가·특징 정의는 [02_classification.md](./02_classification.md) 레지스트리 등재(= `_init` 개정, 승인 필요).
+
+**해결 규칙:**
+- 한 레포는 **하나의 조직**에 속한다(조직 판별 = [02_classification.md](./02_classification.md)).
+- **그 조직 레포 안에서는 조직 정책이 General에 우선**한다(더 엄격한 쪽).
+- 조직 정책은 General을 **완화하지 못한다 — 강화만 가능**(예: SEEMEDI PHI 로깅 금지는 General 로깅 규칙을 강화).
+- 조직 정책끼리는 충돌하지 않는다(레포당 단일 조직).
+
+---
+> **개정 이력** · 2026-07-14: P4를 "General↔SEEMEDI 충돌"에서 "General↔조직 정책 충돌"로 일반화하고 조직 레지스트리(General·SEEMEDI) 추가 (세션 승인).

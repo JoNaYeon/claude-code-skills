@@ -12,10 +12,13 @@
 | # | 문서 | 카테고리 | 내용 |
 |---|------|----------|------|
 | 00 | [governance](./00_governance.md) | 거버넌스 | `_init`의 권위·불변 원칙·개정 절차 |
-| 01 | [precedence](./01_precedence.md) | 우선순위·상속 | SSOT, 복제 금지, 상충 해결 순위 |
-| 02 | [classification](./02_classification.md) | 분류 원칙 | General vs SEEMEDI 특이 최상위 분류축 |
+| 01 | [precedence](./01_precedence.md) | 우선순위·상속 | SSOT, 복제 금지, 상충 해결 순위, General↔조직 정책 |
+| 02 | [classification](./02_classification.md) | 조직 특징 분류·규칙 | General vs 조직 정책, 조직 레지스트리(SEEMEDI…), 특징→규칙 |
 | 03 | [authoring](./03_authoring.md) | 문서 작성 | 버전 `_vN`·frontmatter·명명 최상위 규칙 |
-| 04 | [workflow](./04_workflow.md) | 작업 방식 | 제안 후 실행(승인 게이트) |
+| 04 | [workflow](./04_workflow.md) | 작업 방식 | 제안 후 실행(공통) + 유형별 라우터 |
+| 04a | [workflow/code-authoring](./04_workflow/code-authoring.md) | 작업 방식·코드 | 코드 작성·수정 워크플로우 |
+| 04b | [workflow/document-authoring](./04_workflow/document-authoring.md) | 작업 방식·문서 | 문서·규칙 작성 워크플로우 |
+| 04c | [workflow/general-task](./04_workflow/general-task.md) | 작업 방식·일반 | 조사·운영 등 일반 task |
 
 ## 하위 문서와의 관계
 

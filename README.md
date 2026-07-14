@@ -11,10 +11,10 @@ Claude Code에서 사용하는 개인 **스킬** 및 **프로젝트 템플릿** 
 | # | 문서 | 카테고리 |
 |---|------|----------|
 | 00 | [governance](./_init/00_governance.md) | `_init` 권위·불변·개정 절차 |
-| 01 | [precedence](./_init/01_precedence.md) | 우선순위·상속·SSOT·복제 금지 |
-| 02 | [classification](./_init/02_classification.md) | General vs SEEMEDI 특이 분류축 |
+| 01 | [precedence](./_init/01_precedence.md) | 우선순위·상속·SSOT·복제 금지, General↔조직 정책 |
+| 02 | [classification](./_init/02_classification.md) | 조직 특징 분류·규칙 (General vs 조직 정책, 조직 레지스트리) |
 | 03 | [authoring](./_init/03_authoring.md) | 문서 작성·버전·명명 |
-| 04 | [workflow](./_init/04_workflow.md) | 제안 후 실행 |
+| 04 | [workflow](./_init/04_workflow.md) | 제안 후 실행 + 유형별(코드/문서/일반) |
 
 모든 규칙 문서(`code-conventions/`·`_template/_conventions/`·`working-agreements/`)는 상단에 `Governed by _init` 배너로 이 계층을 참조합니다.
 
@@ -306,9 +306,10 @@ claude-code-skills/
 ├── _init/                       # 📜 최고 규칙 계층 (헌법, 일반 task 중 변경 금지)
 │   ├── 00_governance.md         #   _init 권위·불변·개정 절차
 │   ├── 01_precedence.md         #   우선순위·상속·SSOT
-│   ├── 02_classification.md     #   General vs SEEMEDI 특이
+│   ├── 02_classification.md     #   조직 특징 분류·규칙 (General/조직 정책)
 │   ├── 03_authoring.md          #   문서 작성·버전·명명
-│   └── 04_workflow.md           #   제안 후 실행
+│   ├── 04_workflow.md           #   제안 후 실행 (공통 + 라우터)
+│   └── 04_workflow/             #   유형별: code-authoring·document-authoring·general-task
 ├── work/                        # 업무용 스킬
 │   ├── ai/                      #   work_ai_*  (9)
 │   ├── coding/                  #   work_coding_*  (7)
