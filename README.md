@@ -192,6 +192,42 @@ Obsidian Brain Vault용 노트 템플릿입니다. [상세 안내](./_template/n
 
 새 스킬을 만들 때 참고할 수 있는 파일 골격입니다.
 
+### 📐 문서 형식 컨벤션 (`_template/_conventions/`)
+
+문서 작성·버전 관리 형식 규칙을 **General / SEEMEDI 특이**로 분리. [상세 안내](./_template/_conventions/README.md)
+
+| 구분 | 문서 |
+|------|------|
+| General | [document-versioning](./_template/_conventions/general/document-versioning.md) · [frontmatter-and-naming](./_template/_conventions/general/frontmatter-and-naming.md) |
+| SEEMEDI | [smedi-document-standards](./_template/_conventions/seemedi/smedi-document-standards.md) (STD ID·docx·v1 보존) |
+
+---
+
+## 📏 코드 작성 컨벤션 (`code-conventions/`)
+
+코드 작성 방식을 **General(재사용 가능) / SEEMEDI 특이(환자데이터·규제·의료)** 로 분리. [상세 안내](./code-conventions/README.md)
+
+**분리 기준**: General = 다른 회사/프로젝트에도 그대로 쓸 수 있는 것(코드 작성법·AWS 세팅·Git·API). SEEMEDI 특이 = 이 회사·의료·규제 때문에만 존재하는 것(환자 PHI·DB/망 분리·IEC 62304·FHIR).
+
+### `general/` — 재사용 가능
+| task | 언어별 |
+|------|--------|
+| [coding-style](./code-conventions/general/by-task/coding-style.md) · [naming-conventions](./code-conventions/general/by-task/naming-conventions.md) · [error-handling-logging](./code-conventions/general/by-task/error-handling-logging.md) · [toolchain-quality-gates](./code-conventions/general/by-task/toolchain-quality-gates.md) · [api-design](./code-conventions/general/by-task/api-design.md) · [repo-and-versioning](./code-conventions/general/by-task/repo-and-versioning.md) · [aws-infra-setup](./code-conventions/general/by-task/aws-infra-setup.md) · [git-workflow](./code-conventions/general/by-task/git-workflow.md) | [kotlin](./code-conventions/general/by-language/kotlin.md) · [python](./code-conventions/general/by-language/python.md) · [typescript](./code-conventions/general/by-language/typescript.md) · [swift](./code-conventions/general/by-language/swift.md) · [cpp](./code-conventions/general/by-language/cpp.md) |
+
+### `seemedi/` — SEEMEDI 특이
+[patient-data-phi](./code-conventions/seemedi/by-task/patient-data-phi.md) · [db-separation](./code-conventions/seemedi/by-task/db-separation.md) · [regulated-track](./code-conventions/seemedi/by-task/regulated-track.md) · [medical-terminology-fhir](./code-conventions/seemedi/by-task/medical-terminology-fhir.md) · [seemedi-namespace](./code-conventions/seemedi/by-task/seemedi-namespace.md)
+
+---
+
+## 🤝 작업 약속 (`working-agreements/`)
+
+문서·코드 외의 작업 방식 약속과 참조 사실. [상세 안내](./working-agreements/README.md)
+
+| 구분 | 문서 |
+|------|------|
+| General | [propose-before-executing](./working-agreements/general/propose-before-executing.md) — 파일 작업 전 제안·승인 게이트 |
+| SEEMEDI | [smedi-reference](./working-agreements/seemedi/smedi-reference.md) — 회사명 SEEMEDI AI / SMEDI |
+
 ---
 
 ## 설치하기 (전역 — 모든 프로젝트에 적용)
@@ -269,7 +305,16 @@ claude-code-skills/
 ├── _template/                   # 템플릿 모음
 │   ├── notes/                   #   Obsidian 노트 템플릿
 │   ├── project-pack/            #   PM 라이프사이클 문서
+│   ├── _conventions/            #   문서 형식 컨벤션
+│   │   ├── general/             #     재사용 가능
+│   │   └── seemedi/             #     SEEMEDI 특이
 │   └── skill-name/              #   스킬 보일러플레이트
+├── code-conventions/            # 코드 작성 컨벤션
+│   ├── general/                 #   재사용 (by-task 8 · by-language 5)
+│   └── seemedi/                 #   SEEMEDI 특이 (PHI·DB분리·규제·FHIR·네임스페이스)
+├── working-agreements/          # 작업 약속·참조
+│   ├── general/                 #   재사용 (제안 후 실행)
+│   └── seemedi/                 #   SEEMEDI 특이 (회사명)
 ├── install.sh                   # 전역 설치 스크립트
 ├── LICENSE
 └── README.md

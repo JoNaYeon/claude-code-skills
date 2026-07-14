@@ -8,6 +8,12 @@ description: "Use this skill when the user encounters an error, exception, or bu
 ## 목적
 에러 메시지와 스택 트레이스를 분석하여 원인을 파악하고 해결 방법을 제시합니다.
 
+## 컨벤션 참조 (General / SEEMEDI 특이)
+수정안은 레포 루트 `code-conventions/`의 에러 처리 규칙에 맞춥니다.
+- **General(항상)** — `code-conventions/general/by-task/error-handling-logging.md`: 예외 2계층(도메인/기술), 예외 삼키기 금지, 원인 보존 재던지기, RFC 9457 problem+json, ECS 구조화 로깅, W3C traceId.
+- **SEEMEDI 특이(SEEMEDI 레포에서만)** — `code-conventions/seemedi/by-task/patient-data-phi.md`: **로그·예외 메시지에 PHI/환자식별자 절대 금지**. 재현·로그 확인 시 환자 데이터가 노출되지 않도록 마스킹·합성 데이터만 사용.
+- SEEMEDI 레포 판별: `governance.yaml`·`com.seemedi.*`·제품 접두 `ecg-/edo-/hel-/tlk-`.
+
 ## 지침
 
 ### 1. 에러 정보 수집

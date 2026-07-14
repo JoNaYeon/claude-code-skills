@@ -8,6 +8,12 @@ description: "Use this skill when the user asks to create, review, or optimize a
 ## 목적
 프로젝트에 맞는 Dockerfile을 생성하거나 기존 Dockerfile의 문제점을 찾아 개선합니다.
 
+## 컨벤션 참조 (General / SEEMEDI 특이)
+이미지·인프라 규칙은 레포 루트 `code-conventions/`를 따릅니다.
+- **General(항상)** — `code-conventions/general/by-task/aws-infra-setup.md`·`repo-and-versioning.md`: 베이스 이미지 **digest 고정**(`@sha256:`, `latest` 금지), 이미지 태그 `vX.Y.Z-{git-sha}`, 리소스 명명 `{company}-{env}-{domain}-{resource}`, AWS 필수 태그.
+- **SEEMEDI 특이(SEEMEDI 레포에서만)** — `code-conventions/seemedi/by-task/db-separation.md`: 하이브리드(AWS EKS/온프레미스 K3s), 외부 아티팩트는 **폐쇄망 Nexus 프록시 경유**, 이미지에 PHI·시크릿 미포함, HSM 키는 온프레미스. regulated 레포는 SBOM 첨부 필수.
+- SEEMEDI 레포 판별: `governance.yaml`·제품 접두 `ecg-/edo-/hel-/tlk-`.
+
 ## 지침
 
 ### 생성 시

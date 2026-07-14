@@ -8,6 +8,12 @@ description: "Use this skill when the user asks to refactor code, improve code s
 ## 목적
 기존 코드의 구조를 개선하여 가독성, 유지보수성, 확장성을 높입니다.
 
+## 컨벤션 참조 (General / SEEMEDI 특이)
+리팩토링 목표 스타일은 레포 루트 `code-conventions/`를 따릅니다.
+- **General(항상)** — `code-conventions/general/by-task/`: coding-style·naming-conventions(케이스·경계 변환)·error-handling-logging(예외 2계층·Result). 언어별 `general/by-language/`.
+- **SEEMEDI 특이(SEEMEDI 레포에서만)** — `code-conventions/seemedi/`: FHIR 용어로 식별자 정렬(`interpretation`→`conclusion`), PHI 마스킹, `seemedi` 네임스페이스. 규제(regulated) 레포는 리팩토링도 추적성·변경관리 대상.
+- SEEMEDI 레포 판별: `governance.yaml`·`com.seemedi.*`·제품 접두 `ecg-/edo-/hel-/tlk-`.
+
 ## 지침
 
 ### 1. 현황 분석
