@@ -1,5 +1,7 @@
 # 코딩 스타일 (General)
 
+> 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > **General** — 회사·도메인 무관, 어느 프로젝트에도 재사용 가능.
 > 출처: SEEMEDI `STD-CODE-0001` 코딩컨벤션 가이드에서 회사 특이 부분 제거.
 > 언어별 상세: [../by-language/](../by-language/)

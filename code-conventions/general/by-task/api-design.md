@@ -1,5 +1,7 @@
 # API 명세 설계 (General)
 
+> 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > **General** — 재사용 가능. 출처: SEEMEDI `STD-API-0001`에서 FHIR·PHI·회사 네임스페이스 제거.
 > PHI URL 금지·PII 이벤트 격리: [../../seemedi/by-task/patient-data-phi.md](../../seemedi/by-task/patient-data-phi.md)
 

@@ -1,5 +1,7 @@
 # 저장소 구조·버전 축 (General)
 
+> 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > **General** — 재사용 가능. 출처: SEEMEDI `STD-REPO-0001`, `STD-VER-0001`에서 규제(IEC 62304) 격리 제거.
 > 규제 레포 격리·트랙: [../../seemedi/by-task/regulated-track.md](../../seemedi/by-task/regulated-track.md)
 

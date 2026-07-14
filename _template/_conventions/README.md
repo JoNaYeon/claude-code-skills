@@ -1,5 +1,7 @@
 # 문서 형식 컨벤션
 
+> 📜 Governed by [`_init`](../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > 문서 작성·버전 관리 형식 규칙을 **General**과 **SEEMEDI 특이**로 분리한 모음입니다.
 > 근거: SEEMEDI `STD-DOC-0001`, `STD-VER-0001`, 전사베이스 vault 관행.
 

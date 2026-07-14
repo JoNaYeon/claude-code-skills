@@ -1,5 +1,7 @@
 # 툴체인·품질게이트 (General)
 
+> 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > **General** — 재사용 가능. 출처: SEEMEDI `STD-TOOL-0001`에서 규제 트랙·PHI 훅·폐쇄망 특이 제거.
 > 규제 트랙 차등·PHI 훅: [../../seemedi/by-task/regulated-track.md](../../seemedi/by-task/regulated-track.md)
 

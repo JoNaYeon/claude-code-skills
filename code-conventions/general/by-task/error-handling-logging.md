@@ -1,5 +1,7 @@
 # 에러 처리·로깅 (General)
 
+> 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > **General** — 재사용 가능. 출처: SEEMEDI `STD-LOG-0001`에서 PHI/규제 특이 제거.
 > PHI 로깅 금지 등 SEEMEDI 특이: [../../seemedi/by-task/patient-data-phi.md](../../seemedi/by-task/patient-data-phi.md)
 

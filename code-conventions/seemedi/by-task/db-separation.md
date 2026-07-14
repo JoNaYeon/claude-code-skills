@@ -1,5 +1,7 @@
 # DB·망 분리 — SEEMEDI 특이
 
+> 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > **SEEMEDI 특이** — 병원망/회사망 분리, 하이브리드 인프라 때문에 존재.
 > 출처: `STD-STACK-0001` §3.5~3.8, `STD-TERM-0001` §5.2·§7.1.
 > General 인프라·DB 명명: [../../general/by-task/aws-infra-setup.md](../../general/by-task/aws-infra-setup.md) · [naming-conventions.md](../../general/by-task/naming-conventions.md)

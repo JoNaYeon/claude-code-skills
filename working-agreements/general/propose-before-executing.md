@@ -1,5 +1,7 @@
 # 제안 후 실행 (승인 게이트) — General
 
+> 📜 Governed by [`_init`](../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > **General** — 재사용 가능한 작업 방식. 출처: `feedback_propose-before-executing`.
 
 파일을 만들거나 바꾸는 작업은 **먼저 제안하고, 사용자 승인이 난 뒤에 실행**한다.

@@ -1,5 +1,7 @@
 # 회사명 표기 (SEEMEDI AI / SMEDI) — SEEMEDI 특이
 
+> 📜 Governed by [`_init`](../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > **SEEMEDI 특이** — 회사 참조 사실. 출처: `reference_company-name-smedi`.
 
 회사명은 **SEEMEDI AI**, 약칭은 **SMEDI**다.

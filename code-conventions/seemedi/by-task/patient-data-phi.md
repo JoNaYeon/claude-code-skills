@@ -1,5 +1,7 @@
 # 환자 데이터(PHI) 취급 — SEEMEDI 특이
 
+> 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > **SEEMEDI 특이** — 환자 데이터·의료·규제 때문에 존재. 일반 프로젝트에는 적용 안 됨.
 > 출처: `STD-LOG-0001` §7, `STD-API-0001` §4.3·§5.4, `STD-STACK-0001` §3.5, `STD-TERM-0001` §2.2.
 > General 로깅·에러: [../../general/by-task/error-handling-logging.md](../../general/by-task/error-handling-logging.md)

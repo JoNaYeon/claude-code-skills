@@ -1,5 +1,7 @@
 # 문서 버전 규칙 `_vN` (General)
 
+> 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > **General** — 재사용 가능. 출처: SEEMEDI `feedback_versioning-convention` 일반화.
 
 ## 버전 접미사 `_vN`

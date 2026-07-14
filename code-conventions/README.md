@@ -1,5 +1,7 @@
 # 코드 작성 컨벤션
 
+> 📜 Governed by [`_init`](../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > 코드 작성 방식을 **General(재사용 가능)** 과 **SEEMEDI 특이(환자데이터·규제·의료)** 로 분리해 정리한 모음입니다.
 > 근거: `C:\Users\user\OneDrive\vault\02_work\SEEMEDI\전사베이스` 표준 문서(STD-*).
 

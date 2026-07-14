@@ -1,5 +1,7 @@
 # Python (General)
 
+> 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > **General** — 재사용 가능. 정본은 by-task 문서. 여기는 언어별 요약.
 
 ## 스타일 (SSOT: Google Python Style Guide, PEP 8 상위집합)

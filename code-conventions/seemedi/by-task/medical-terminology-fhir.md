@@ -1,5 +1,7 @@
 # 의료 도메인 용어 (FHIR) — SEEMEDI 특이
 
+> 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > **SEEMEDI 특이** — 의료 도메인 용어. 일반 프로젝트엔 없음.
 > 출처: `STD-TERM-0001` §2 (FHIR R4 / KR Core IG v2.0.0 정렬).
 

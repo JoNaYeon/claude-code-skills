@@ -4,6 +4,22 @@ Claude Code에서 사용하는 개인 **스킬** 및 **프로젝트 템플릿** 
 
 ---
 
+## 📜 최고 규칙 — [`_init/`](./_init/README.md)
+
+`_init/`은 전체 문서·스킬·컨벤션이 참조하는 **최고 규칙 계층(헌법)**입니다. 하위 문서가 `_init`과 충돌하면 `_init`이 우선합니다. **일반 task 중에는 `_init`을 변경하지 않습니다** (개정은 명시적 승인으로만).
+
+| # | 문서 | 카테고리 |
+|---|------|----------|
+| 00 | [governance](./_init/00_governance.md) | `_init` 권위·불변·개정 절차 |
+| 01 | [precedence](./_init/01_precedence.md) | 우선순위·상속·SSOT·복제 금지 |
+| 02 | [classification](./_init/02_classification.md) | General vs SEEMEDI 특이 분류축 |
+| 03 | [authoring](./_init/03_authoring.md) | 문서 작성·버전·명명 |
+| 04 | [workflow](./_init/04_workflow.md) | 제안 후 실행 |
+
+모든 규칙 문서(`code-conventions/`·`_template/_conventions/`·`working-agreements/`)는 상단에 `Governed by _init` 배너로 이 계층을 참조합니다.
+
+---
+
 ## 네이밍 규칙
 
 ```
@@ -287,6 +303,12 @@ bash install.sh
 
 ```
 claude-code-skills/
+├── _init/                       # 📜 최고 규칙 계층 (헌법, 일반 task 중 변경 금지)
+│   ├── 00_governance.md         #   _init 권위·불변·개정 절차
+│   ├── 01_precedence.md         #   우선순위·상속·SSOT
+│   ├── 02_classification.md     #   General vs SEEMEDI 특이
+│   ├── 03_authoring.md          #   문서 작성·버전·명명
+│   └── 04_workflow.md           #   제안 후 실행
 ├── work/                        # 업무용 스킬
 │   ├── ai/                      #   work_ai_*  (9)
 │   ├── coding/                  #   work_coding_*  (7)

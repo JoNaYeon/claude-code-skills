@@ -1,5 +1,7 @@
 # SEEMEDI 네임스페이스·식별자 — SEEMEDI 특이
 
+> 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > **SEEMEDI 특이** — 회사 고유 네임스페이스·제품·추적성.
 > 출처: `STD-TERM-0001` §4·§6·§7·§9, `STD-LOG-0001` §3.3.
 > General 명명 규칙: [../../general/by-task/naming-conventions.md](../../general/by-task/naming-conventions.md)

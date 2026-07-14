@@ -1,5 +1,7 @@
 # 규제 트랙 (IEC 62304) — SEEMEDI 특이
 
+> 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > **SEEMEDI 특이** — 의료기기 소프트웨어 규제 때문에 존재.
 > 출처: `STD-GOV-0001`, `STD-REPO-0001`, `STD-TOOL-0001` §6, `STD-GIT-0001` §7, `STD-VER-0001` §5.
 > General 저장소·툴체인·Git: [../../general/by-task/repo-and-versioning.md](../../general/by-task/repo-and-versioning.md)

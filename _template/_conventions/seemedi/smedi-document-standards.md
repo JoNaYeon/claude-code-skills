@@ -1,5 +1,7 @@
 # SEEMEDI 문서 표준 — SEEMEDI 특이
 
+> 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > **SEEMEDI 특이** — 전사베이스 문서 체계 고유 규칙.
 > 출처: `STD-DOC-0001`, `STD-TERM-0001` §8, `feedback_no-copy-v1-to-v2`.
 

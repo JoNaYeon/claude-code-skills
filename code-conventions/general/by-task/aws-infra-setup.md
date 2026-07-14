@@ -1,5 +1,7 @@
 # AWS·인프라 세팅 (General)
 
+> 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > **General** — 재사용 가능. 출처: SEEMEDI `STD-TERM-0001` §7, `STD-STACK-0001` §3.6~3.8에서 온프레미스·HSM·병원망 특이 제거.
 > 하이브리드(온프레미스 K3s)·HSM 키·GitLab 프라이빗 VPC: [../../seemedi/by-task/db-separation.md](../../seemedi/by-task/db-separation.md)
 

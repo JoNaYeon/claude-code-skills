@@ -1,5 +1,7 @@
 # 명명 규칙 (General)
 
+> 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > **General** — 재사용 가능. 출처: SEEMEDI `STD-TERM-0001` §3·§5·§6에서 도메인 특이(FHIR·제품약칭) 제거.
 > 회사 네임스페이스 등 SEEMEDI 특이 명명: [../../seemedi/by-task/seemedi-namespace.md](../../seemedi/by-task/seemedi-namespace.md)
 

@@ -1,5 +1,7 @@
 # frontmatter·파일명·폴더 안내 (General)
 
+> 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
+
 > **General** — 재사용 가능. 출처: SEEMEDI 전사베이스 vault 관행 일반화.
 
 ## frontmatter 스키마
