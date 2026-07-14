@@ -52,6 +52,11 @@ git push origin <현재 브랜치>
 
 **Yes 선택 시** — 다음 형식으로 Issue 내용을 생성하고 사용자에게 보여줍니다:
 
+**이슈 제목 형식**: `[type][scope] 간단한 설명`
+- type: `feat | fix | refactor | test | build | chore | docs | revert | design`
+- scope: `camera | tflite | ui | analysis | widget | pipeline | data | release | repo`
+- 예시: `[feat][pipeline] JSON 프롬프트 분리 및 RAG 사전 추가`
+
 ```markdown
 ## 작업 내용
 변경사항 요약
@@ -69,7 +74,7 @@ git push origin <현재 브랜치>
 
 그 다음 GitHub CLI 또는 API로 Issue를 생성합니다:
 ```bash
-gh issue create --title "<제목>" --body "<내용>"
+gh issue create --title "[type][scope] 간단한 설명" --body "<내용>"
 ```
 
 `gh`가 없으면 Issue 내용을 마크다운으로 출력하여 직접 붙여넣을 수 있게 합니다.

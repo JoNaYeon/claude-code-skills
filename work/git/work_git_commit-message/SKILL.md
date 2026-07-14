@@ -11,15 +11,19 @@ description: "Use this skill when the user asks to generate a commit message, wr
 ## 지침
 
 1. `git diff --staged`로 스테이지된 변경사항을 확인합니다.
-2. 변경사항의 성격을 파악합니다:
+2. 변경사항의 성격을 파악합니다 (type):
    - `feat`: 새 기능 추가
    - `fix`: 버그 수정
-   - `docs`: 문서 변경
-   - `style`: 코드 포맷팅 (동작 변경 없음)
    - `refactor`: 리팩토링 (동작 변경 없음)
    - `test`: 테스트 추가/수정
-   - `chore`: 빌드, 설정 등 기타
-3. 변경 범위(scope)를 식별합니다.
+   - `build`: 빌드 시스템, 의존성 변경
+   - `chore`: 설정 등 기타
+   - `docs`: 문서 변경
+   - `revert`: 이전 커밋 되돌리기
+   - `design`: UI/UX 디자인 변경
+3. 변경 범위(scope)를 식별합니다:
+   - `camera` | `tflite` | `ui` | `analysis` | `widget` | `pipeline` | `data` | `release` | `repo`
+   - 위 목록에 해당하지 않으면 변경된 모듈/컴포넌트명을 사용합니다.
 4. 커밋 메시지를 작성합니다.
 
 ## 커밋 메시지 형식
