@@ -7,7 +7,7 @@
 규칙이 충돌하면 위에서 아래 순으로 우선한다.
 
 1. **`_init`** (최고 규칙, 이 폴더)
-2. **영역 표준** (SEEMEDI 전사베이스 `STD-*` 원본, `code-conventions`/`_template/_conventions`/`working-agreements`의 README)
+2. **영역 표준** (각 영역 README, 및 조직 전사베이스 표준 원본 — 예: SEEMEDI `STD-*`)
 3. **세부 규칙 문서** (각 by-task / by-language 문서)
 4. **스킬(SKILL.md)** — 위 규칙을 소비·적용
 
@@ -28,14 +28,7 @@
 
 General 규칙은 **조직 무관 기본값**이고, 각 **조직**은 자체 정책(조직 특이 규칙)을 둔다. General과 조직 정책이 겹칠 때의 해결 원칙이다.
 
-**조직 레지스트리 (현재):**
-
-| 조직 | 도메인 | 규칙 폴더 | 판별 |
-|------|--------|-----------|------|
-| (General) | 조직 무관 공통 | `*/general/` | 기본값(항상 적용) |
-| SEEMEDI | 의료 AI (환자데이터·규제) | `*/seemedi/` | `governance.yaml`·`com.seemedi.*`·`ecg-/edo-/hel-/tlk-` |
-
-> 조직은 늘어날 수 있다. 새 조직 추가·특징 정의는 [02_classification.md](./02_classification.md) 레지스트리 등재(= `_init` 개정, 승인 필요).
+> 조직 목록·특징·판별법의 SSOT는 **[02_classification.md](./02_classification.md) 조직 레지스트리**다(현재: SEEMEDI). 여기서는 중복 나열하지 않는다.
 
 **해결 규칙:**
 - 한 레포는 **하나의 조직**에 속한다(조직 판별 = [02_classification.md](./02_classification.md)).
@@ -44,4 +37,6 @@ General 규칙은 **조직 무관 기본값**이고, 각 **조직**은 자체 �
 - 조직 정책끼리는 충돌하지 않는다(레포당 단일 조직).
 
 ---
-> **개정 이력** · 2026-07-14: P4를 "General↔SEEMEDI 충돌"에서 "General↔조직 정책 충돌"로 일반화하고 조직 레지스트리(General·SEEMEDI) 추가 (세션 승인).
+> **개정 이력**
+> - 2026-07-14: P4를 "General↔SEEMEDI 충돌"에서 "General↔조직 정책 충돌"로 일반화, 조직 레지스트리 추가 (세션 승인).
+> - 2026-07-14(정합): 조직 레지스트리 중복 제거 — SSOT를 02_classification으로 일원화(P4). P1 2계층 서술을 다조직 일반화.

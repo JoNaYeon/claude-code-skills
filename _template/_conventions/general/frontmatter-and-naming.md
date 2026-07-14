@@ -4,11 +4,13 @@
 
 > **General** — 재사용 가능. 출처: SEEMEDI 전사베이스 vault 관행 일반화.
 
-## frontmatter 스키마
+## frontmatter (선택 — 조직/프로젝트 관례에 따름)
 
-마크다운 표준 문서는 frontmatter에 메타를 둔다(필드명은 프로젝트에 맞게 조정).
+- frontmatter 메타는 **필수가 아니다.** 조직 표준 문서 체계(예: SEEMEDI STD-*)를 쓰는 프로젝트에서만 아래처럼 둔다.
+- 이 레포의 규칙 문서는 frontmatter 대신 상단 **`Governed by _init` 배너**로 계층을 표시한다. 스킬(SKILL.md)은 `name`/`description` frontmatter를 쓴다.
 
 ```yaml
+# 조직 표준 문서 체계를 쓸 때(선택)
 ---
 id: <문서 ID>
 area: <폴더 영역>
@@ -19,7 +21,7 @@ updated: YYYY-MM-DD
 ---
 ```
 
-- 폴더는 **읽는 순서·내비게이션**(1축), `tags`는 자산 성격 분류(2축)로 직교하게 둔다.
+- frontmatter를 쓰는 경우: 폴더는 **읽는 순서·내비게이션**(1축), `tags`는 자산 성격 분류(2축)로 직교하게 둔다.
 
 ## 파일명
 
@@ -29,5 +31,5 @@ updated: YYYY-MM-DD
 
 ## 폴더 안내 파일
 
-- 폴더 안내 파일명은 **`__README.md`**(밑줄 2개, 상단 정렬용) 권장.
-- 일반 `README.md`와 구분해 폴더 내비게이션 용도로 사용.
+- 폴더 안내 파일명은 **`README.md`**(기본).
+- 일부 조직 관례는 상단 정렬용으로 `__README.md`(밑줄 2개)를 쓴다 — 이는 조직 정책이며 General 기본값 아님. → [../seemedi/smedi-document-standards.md](../seemedi/smedi-document-standards.md).

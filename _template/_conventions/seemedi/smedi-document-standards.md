@@ -21,6 +21,11 @@ version: v1.5
 updated: 2026-07-03
 ```
 
+## 폴더 안내 파일 `__README.md`
+
+- SEEMEDI 전사베이스 폴더 안내 파일명은 **`__README.md`**(밑줄 2개, 상단 정렬용). 일반 `README.md`는 쓰지 않는다(2026-07-02 결정).
+- 이는 SEEMEDI 관례이며 General 기본값(`README.md`)이 아니다. → General은 [../general/frontmatter-and-naming.md](../general/frontmatter-and-naming.md).
+
 ## 폴더 1축 = 개발흐름
 
 `0_index` / `1_기반` / `2_저장소와형상` / `3_코드표준` / `4_인터페이스` — '분류'가 아니라 **읽는 순서·내비게이션**.

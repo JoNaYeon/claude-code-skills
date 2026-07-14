@@ -7,7 +7,7 @@
 
 ## DA1. 작성 규칙 적용
 
-- 문서 형식·버전·명명은 [../03_authoring.md](../03_authoring.md)를 따른다(버전 `_vN`, frontmatter, `__README.md`, 명명).
+- 문서 형식·버전·명명은 [../03_authoring.md](../03_authoring.md)를 따른다(버전 `_vN`, 폴더 안내 `README.md` 기본, frontmatter는 조직 표준 문서 한정).
 - 규칙 문서는 [../02_classification.md](../02_classification.md)에 따라 `general/` 또는 조직 `<조직>/`에 두고, 상단에 `Governed by _init` 배너와 근거(SSOT)를 명시한다.
 
 ## DA2. 버전·개정
