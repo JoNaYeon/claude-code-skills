@@ -2,8 +2,8 @@
 
 > 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
 
-> **General** — 재사용 가능. 출처: SEEMEDI `STD-TERM-0001` §7, `STD-STACK-0001` §3.6~3.8에서 온프레미스·HSM·병원망 특이 제거.
-> 하이브리드(온프레미스 K3s)·HSM 키·GitLab 프라이빗 VPC: [../../seemedi/by-task/db-separation.md](../../seemedi/by-task/db-separation.md)
+> **General** — 재사용 가능. **사본** — SSOT는 전사 컨벤션 레포(비공개)의 `code-conventions/by-task/`. 상충 시 SSOT 우선.
+> 조직 특이 정책(강화 규칙)은 비공개 조직 정책 레포에서 관리한다.
 
 ## 인프라 리소스 명명
 

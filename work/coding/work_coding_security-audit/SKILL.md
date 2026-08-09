@@ -8,11 +8,10 @@ description: "Use this skill when the user wants to check code for security vuln
 ## 목적
 코드에서 보안 취약점을 탐지하고 안전한 대안을 제시합니다.
 
-## 컨벤션 참조 (General / SEEMEDI 특이)
+## 컨벤션 참조 (General / 조직 특이)
 일반 OWASP 점검에 더해 레포 루트 `code-conventions/`의 보안 관련 규칙을 확인합니다.
 - **General(항상)** — 시크릿 하드코딩 금지(gitleaks/detect-secrets), 에러 응답에 스택·SQL·내부 경로 노출 금지, 인증 Bearer/OPA. `code-conventions/general/by-task/error-handling-logging.md`·`toolchain-quality-gates.md`.
-- **SEEMEDI 특이(SEEMEDI 레포에서만, 최우선)** — `code-conventions/seemedi/by-task/patient-data-phi.md`: **PHI/환자식별자 로깅·URL 노출 금지(L4)**, 원본 식별자 URL 경로/쿼리 금지→불투명 대체키(`patientRef`), PHI 이벤트 병원망 격리, HSM 온프레미스 키(`db-separation.md`). 이 위반은 보안 사고로 취급.
-- SEEMEDI 레포 판별: `governance.yaml`·`com.seemedi.*`·제품 접두 `ecg-/edo-/hel-/tlk-`.
+- **조직 특이(해당 조직 레포에서만, 최우선)** — 조직 소속 레포에서는 비공개 조직 정책 레포의 강화 규칙(민감 데이터 노출 금지 등)을 최우선으로 추가 적용하며, 위반은 보안 사고로 취급한다.
 
 ## 지침
 

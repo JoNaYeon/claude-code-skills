@@ -2,8 +2,8 @@
 
 > 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
 
-> **General** — 재사용 가능. 출처: SEEMEDI `STD-GIT-0001`에서 규제(2인 승인·추적성 토큰) 특이 제거.
-> 규제 레포 추가 게이트: [../../seemedi/by-task/regulated-track.md](../../seemedi/by-task/regulated-track.md)
+> **General** — 재사용 가능. **사본** — SSOT는 전사 컨벤션 레포(비공개)의 `code-conventions/by-task/`. 상충 시 SSOT 우선.
+> 조직 특이 정책(강화 규칙)은 비공개 조직 정책 레포에서 관리한다.
 
 ## Git Flow 브랜치 전략
 

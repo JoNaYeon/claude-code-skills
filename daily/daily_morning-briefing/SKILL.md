@@ -1,6 +1,6 @@
 ---
 name: daily_morning-briefing
-description: "매일 아침 하루 브리핑을 생성하고 Obsidian에 할일 페이지를 작성합니다. Google 캘린더 일정, Google Tasks 할일, 주요 뉴스 요약(링크 포함), 이메일(nannanijo@gmail.com, nayeon@seemedi.com) 요약을 정리합니다. Triggers on: 'morning briefing', '아침 브리핑', '오늘 일정', '데일리 브리핑', '하루 정리해줘'."
+description: "매일 아침 하루 브리핑을 생성하고 Obsidian에 할일 페이지를 작성합니다. Google 캘린더 일정, Google Tasks 할일, 주요 뉴스 요약(링크 포함), 이메일(개인·회사 계정) 요약을 정리합니다. Triggers on: 'morning briefing', '아침 브리핑', '오늘 일정', '데일리 브리핑', '하루 정리해줘'."
 ---
 
 # 🌅 Morning Briefing
@@ -47,7 +47,7 @@ description: "매일 아침 하루 브리핑을 생성하고 Obsidian에 할일 
 ### 4. 📧 이메일 요약
 다음 두 계정의 오늘 수신 메일을 요약합니다:
 - `nannanijo@gmail.com`
-- `nayeon@seemedi.com`
+- `{회사 이메일}` (로컬 설정 — 커밋 금지)
 
 - `gmail_search_messages`로 각 계정 `after:{어제날짜}` 조건 검색
 - 읽지 않은 메일 우선, 중요도 높은 순 정렬
@@ -56,7 +56,7 @@ description: "매일 아침 하루 브리핑을 생성하고 Obsidian에 할일 
   📬 nannanijo@gmail.com
   • [발신자] 제목 — 한 줄 요약
 
-  📬 nayeon@seemedi.com
+  📬 {회사 이메일}
   • [발신자] 제목 — 한 줄 요약
   ```
 
@@ -65,7 +65,7 @@ description: "매일 아침 하루 브리핑을 생성하고 Obsidian에 할일 
 오늘 할일 페이지 작성 전, 직전 task 파일을 읽어 미완료 항목을 오늘로 이월합니다.
 
 #### 실행 방법
-1. `C:\Users\user\OneDrive\vault\03_daily\task\` 폴더 내 파일 목록을 날짜 기준으로 정렬
+1. `{Obsidian 볼트}\03_daily\task\` 폴더 내 파일 목록을 날짜 기준으로 정렬 (볼트 경로는 로컬 Obsidian 볼트 — `_init/03` A6)
 2. 오늘 날짜보다 이전인 파일 중 가장 최근 파일을 찾음
 3. 해당 파일에서 `- [ ]` (미완료) 항목만 추출
 4. 이월 항목 없으면 → 이 단계 스킵
@@ -92,7 +92,7 @@ description: "매일 아침 하루 브리핑을 생성하고 Obsidian에 할일 
 
 #### 파일 경로
 ```
-C:\Users\user\OneDrive\vault\03_daily\task\YYYY-MM-DD.md
+{Obsidian 볼트}\03_daily\task\YYYY-MM-DD.md
 ```
 
 #### 중요도 분류 기준
@@ -148,7 +148,7 @@ date: YYYY-MM-DD
 ```
 
 #### 처리 규칙
-- `C:\Users\user\OneDrive\vault\03_daily\task\` 폴더가 없으면 먼저 생성
+- `{Obsidian 볼트}\03_daily\task\` 폴더가 없으면 먼저 생성
 - 이월 항목이 없으면 `## ⏰ 이월된 항목` 섹션 생략
 - 오늘 날짜 파일이 이미 존재하면 덮어쓰지 않고, 기존 내용 아래 `---` 구분선 후 업데이트 내용 추가
 - 내용이 없는 섹션(해당 카테고리 항목 없음)은 생략

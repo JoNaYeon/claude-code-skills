@@ -2,7 +2,7 @@
 
 > 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
 
-> **General** — 재사용 가능. 정본은 by-task 문서. 여기는 언어별 요약.
+> **General** — 재사용 가능. 정본은 by-task 문서. 여기는 언어별 요약. **사본** — SSOT는 전사 컨벤션 레포(비공개)의 `code-conventions/by-language/`. 상충 시 SSOT 우선.
 
 ## 스타일 (C++17 이상, clang-format/clang-tidy)
 

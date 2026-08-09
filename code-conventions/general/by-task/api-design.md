@@ -2,8 +2,8 @@
 
 > 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
 
-> **General** — 재사용 가능. 출처: SEEMEDI `STD-API-0001`에서 FHIR·PHI·회사 네임스페이스 제거.
-> PHI URL 금지·PII 이벤트 격리: [../../seemedi/by-task/patient-data-phi.md](../../seemedi/by-task/patient-data-phi.md)
+> **General** — 재사용 가능. **사본** — SSOT는 전사 컨벤션 레포(비공개)의 `code-conventions/by-task/`. 상충 시 SSOT 우선.
+> 조직 특이 정책(강화 규칙)은 비공개 조직 정책 레포에서 관리한다.
 
 ## 명세 우선(Spec-First) 원칙
 

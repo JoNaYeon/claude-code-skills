@@ -8,7 +8,7 @@
 ## CA1. 컨벤션 적용
 
 - **General 컨벤션은 항상** 적용한다 — `code-conventions/general/`(by-task·by-language).
-- **조직 레포이면 그 조직 정책을 추가** 적용한다 — 예: SEEMEDI 레포는 `code-conventions/seemedi/`. 조직 판별·우선순위는 [../02_classification.md](../02_classification.md)·[../01_precedence.md](../01_precedence.md) P4.
+- **조직 레포이면 그 조직 정책을 추가** 적용한다 — 조직 정책은 해당 조직의 비공개 정책 레포에 있다. 조직 판별·우선순위는 [../02_classification.md](../02_classification.md)·[../01_precedence.md](../01_precedence.md) P4.
 
 ## CA2. 승인 게이트 (코드)
 

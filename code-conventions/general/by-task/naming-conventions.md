@@ -2,8 +2,8 @@
 
 > 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
 
-> **General** — 재사용 가능. 출처: SEEMEDI `STD-TERM-0001` §3·§5·§6에서 도메인 특이(FHIR·제품약칭) 제거.
-> 회사 네임스페이스 등 SEEMEDI 특이 명명: [../../seemedi/by-task/seemedi-namespace.md](../../seemedi/by-task/seemedi-namespace.md)
+> **General** — 재사용 가능. **사본** — SSOT는 전사 컨벤션 레포(비공개)의 `code-conventions/by-task/`. 상충 시 SSOT 우선.
+> 조직 특이 정책(강화 규칙)은 비공개 조직 정책 레포에서 관리한다.
 
 ## 언어별 표기 케이스
 

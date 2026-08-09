@@ -8,11 +8,10 @@ description: "Use this skill when the user asks for a code review, wants feedbac
 ## 목적
 코드의 품질, 보안, 성능, 가독성을 체계적으로 검토합니다.
 
-## 컨벤션 참조 (General / SEEMEDI 특이)
+## 컨벤션 참조 (General / 조직 특이)
 검토 기준으로 레포 루트 `code-conventions/`의 컨벤션을 적용합니다.
 - **General(항상 적용)** — `code-conventions/general/`: coding-style·naming·error-handling-logging·toolchain·api-design·git-workflow. 언어별 요약은 `general/by-language/`.
-- **SEEMEDI 특이(SEEMEDI 레포에서만 추가 적용)** — `code-conventions/seemedi/`: PHI 로깅 금지·URL PHI 금지(patient-data-phi), DB/망 분리(db-separation), 규제 트랙 차등(regulated-track), FHIR 용어·`interpretation` 금지(medical-terminology-fhir), `seemedi` 네임스페이스.
-- SEEMEDI 레포 판별: 레포 루트 `governance.yaml` 존재, 패키지 `com.seemedi.*`, 제품 접두 `ecg-/edo-/hel-/tlk-`. regulated 레포는 정적분석 경고 0·2인 승인·추적성 토큰 등 차등 게이트가 추가됨.
+- **조직 특이(해당 조직 레포에서만 추가 적용)** — 조직 소속 레포에서는 비공개 조직 정책 레포의 강화 규칙(데이터 보호·규제 게이트 등)을 추가 적용한다.
 
 ## 지침
 

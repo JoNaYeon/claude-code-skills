@@ -8,11 +8,10 @@ description: "Use this skill when the user asks to generate tests, write unit te
 ## 목적
 주어진 함수나 모듈에 대한 단위 테스트를 프로젝트의 기존 패턴에 맞춰 생성합니다.
 
-## 컨벤션 참조 (General / SEEMEDI 특이)
+## 컨벤션 참조 (General / 조직 특이)
 테스트 코드도 레포 루트 `code-conventions/`를 따릅니다.
 - **General(항상)** — `code-conventions/general/by-language/`(언어별 스타일)·`by-task/error-handling-logging.md`(에러 경로 테스트). 픽스처·목 데이터 명명은 naming-conventions.
-- **SEEMEDI 특이(SEEMEDI 레포에서만)** — `code-conventions/seemedi/`: **모든 예시·목·픽스처는 합성 데이터만**(실제 PHI 금지, `patientId: "SYNTH-0001"`). regulated 레포는 **예외/실패 경로 테스트 필수 + 커버리지 게이트**(regulated-track.md).
-- SEEMEDI 레포 판별: `governance.yaml`·`com.seemedi.*`·제품 접두 `ecg-/edo-/hel-/tlk-`.
+- **조직 특이(해당 조직 레포에서만)** — 조직 소속 레포에서는 비공개 조직 정책 레포의 강화 규칙(합성 데이터만 사용·규제 커버리지 게이트 등)을 추가 적용한다.
 
 ## 지침
 

@@ -24,4 +24,4 @@
 
 - **원칙(WHAT/WHY)의 SSOT = `_init`.** 세부(HOW)의 SSOT = 하위 규칙 문서.
 - 하위 규칙 문서는 상단에 `> Governed by [_init](../_init/README.md)` 배너로 이 계층을 참조한다.
-- 예: General/SEEMEDI 분리의 **기준**은 `_init/02_classification.md`, 그 **구현**은 `code-conventions/{general,seemedi}/`.
+- 예: General/조직 정책 분리의 **기준**은 `_init/02_classification.md`, 그 **구현**은 `code-conventions/general/`과 조직별 비공개 정책 레포.

@@ -2,15 +2,16 @@
 
 > 📜 Governed by [`_init`](../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
 
-> 코드 작성 방식을 **General(재사용 가능)** 과 **조직 정책(SEEMEDI)** 으로 분리해 정리한 모음입니다.
-> 분류 기준·조직 레지스트리의 SSOT는 [`_init/02_classification.md`](../_init/02_classification.md). 근거 원본: `C:\Users\user\OneDrive\vault\02_work\SEEMEDI\전사베이스` 표준 문서(STD-*).
+> 코드 작성 방식을 **General(재사용 가능)** 과 **조직 정책** 으로 분리해 정리한 모음입니다.
+> 분류 기준의 SSOT는 [`_init/02_classification.md`](../_init/02_classification.md).
+> General 문서는 **사본**입니다 — SSOT는 전사 컨벤션 레포(비공개), 상충 시 SSOT 우선.
 
 ## 분리 기준 (→ SSOT: `_init/02`)
 
 | 구분 | 정의 | 예 |
 |------|------|-----|
 | **General** | 조직 무관, 다른 회사/프로젝트에도 그대로 쓸 수 있는 것 | 코드 작성법, AWS 세팅, Git 워크플로우, API 설계 |
-| **조직 정책 (현재: SEEMEDI)** | 특정 조직의 도메인·규제·인프라 때문에만 존재하는 것 | 환자 데이터(PHI), DB/망 분리, 규제(의료기기), FHIR 용어 |
+| **조직 정책** | 특정 조직의 도메인·규제·인프라 때문에만 존재하는 것 | 민감 데이터 보호, 망 분리, 규제 대응, 도메인 용어 |
 
 ## `general/` — 재사용 가능
 
@@ -31,18 +32,12 @@
 ### by-language
 [kotlin](./general/by-language/kotlin.md) · [python](./general/by-language/python.md) · [typescript](./general/by-language/typescript.md) · [swift](./general/by-language/swift.md) · [cpp](./general/by-language/cpp.md)
 
-## `seemedi/` — 조직 정책: SEEMEDI
+## 조직 정책 — 비공개 조직 레포로 이관
 
-| 문서 | 내용 |
-|------|------|
-| [patient-data-phi](./seemedi/by-task/patient-data-phi.md) | PHI 병원망 비반출·비식별·PHI 로깅 금지·HSM |
-| [db-separation](./seemedi/by-task/db-separation.md) | 식별 온프레미스/운영 AWS·raw/anon·하이브리드 |
-| [regulated-track](./seemedi/by-task/regulated-track.md) | IEC 62304·governance.yaml·규제 레포 격리·트랙 차등 |
-| [medical-terminology-fhir](./seemedi/by-task/medical-terminology-fhir.md) | FHIR 용어·finding/order/report·`interpretation` 금지 |
-| [seemedi-namespace](./seemedi/by-task/seemedi-namespace.md) | `seemedi` 토큰·제품 ECG/EDO/HEL/TLK·REQ-ID·에러코드 |
+조직 특이 코드 컨벤션은 비공개 조직 정책 레포로 이관되어 이 레포에는 없습니다.
 
 ## 사용 규칙
 
 - **General 컨벤션은 항상 적용**한다.
-- **해당 조직 레포에서 작업할 때만** 그 조직 폴더(예: `seemedi/`) 컨벤션을 추가 적용한다. 우선순위는 [`_init/01`](../_init/01_precedence.md) P4.
+- **해당 조직 레포에서 작업할 때만** 그 조직의 비공개 정책 레포 컨벤션을 추가 적용한다. 우선순위는 [`_init/01`](../_init/01_precedence.md) P4.
 - 재사용: 다른 프로젝트에는 `general/`만 복사하면 된다(조직 의존 없음).

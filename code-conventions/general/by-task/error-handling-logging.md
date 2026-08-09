@@ -2,8 +2,8 @@
 
 > 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
 
-> **General** — 재사용 가능. 출처: SEEMEDI `STD-LOG-0001`에서 PHI/규제 특이 제거.
-> PHI 로깅 금지 등 SEEMEDI 특이: [../../seemedi/by-task/patient-data-phi.md](../../seemedi/by-task/patient-data-phi.md)
+> **General** — 재사용 가능. **사본** — SSOT는 전사 컨벤션 레포(비공개)의 `code-conventions/by-task/`. 상충 시 SSOT 우선.
+> 조직 특이 정책(강화 규칙)은 비공개 조직 정책 레포에서 관리한다.
 
 ## 예외 계층
 

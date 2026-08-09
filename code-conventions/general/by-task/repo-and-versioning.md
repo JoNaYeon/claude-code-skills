@@ -2,8 +2,8 @@
 
 > 📜 Governed by [`_init`](../../../_init/README.md) — 최고 규칙 계층. 충돌 시 _init 우선.
 
-> **General** — 재사용 가능. 출처: SEEMEDI `STD-REPO-0001`, `STD-VER-0001`에서 규제(IEC 62304) 격리 제거.
-> 규제 레포 격리·트랙: [../../seemedi/by-task/regulated-track.md](../../seemedi/by-task/regulated-track.md)
+> **General** — 재사용 가능. **사본** — SSOT는 전사 컨벤션 레포(비공개)의 `code-conventions/by-task/`. 상충 시 SSOT 우선.
+> 조직 특이 정책(강화 규칙)은 비공개 조직 정책 레포에서 관리한다.
 
 ## 멀티레포 토폴로지
 
