@@ -5,3 +5,6 @@ Thumbs.db
 *~
 .vscode/
 .idea/
+CLAUDE.local.md
+config/ops.config.yml
+.banned-terms.local
